@@ -1,4 +1,4 @@
-def addition(a, b):
+def Addition(a, b):
     a = int(a)
     b = int(b)
     c = a + b

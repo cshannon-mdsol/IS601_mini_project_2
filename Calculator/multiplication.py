@@ -1,4 +1,4 @@
-def multiplication(a, b):
+def Multiplication(a, b):
     a = float(a)
     b = float(b)
     c = a * b

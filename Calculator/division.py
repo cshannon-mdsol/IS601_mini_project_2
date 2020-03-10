@@ -1,4 +1,4 @@
-def division(a, b):
+def Division(a, b):
     a = float(a)
     b = float(b)
     c = b / a

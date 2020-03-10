@@ -1,8 +1,8 @@
 import unittest
-from CsvReader.csvReader import CsvReader, ClassFactory
+from CsvReader.CsvReader import CsvReader, ClassFactory
 
 
-class MyTestCase(unittest.TestCase):
+class myTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
         self.csv_reader = CsvReader('Tests/csv/employee_birthday.csv')
