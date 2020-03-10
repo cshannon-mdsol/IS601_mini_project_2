@@ -1,16 +1,18 @@
 import unittest
 
-from Statistics import statistics
+from numpy.random import seed
+from numpy.random import randint
+from statistics import Statistics
 
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         seed(5)
         self.testData = randint(0, 10, 20)
-        self.statistics = statistics()
+        self.statistics = Statistics()
 
     def test_instantiate_calculator(self):
-        self.assertIsInstance(self.statistics, statistics)
+        self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean_calculator(self):
         mean = self.statistics.mean(self.testData)
