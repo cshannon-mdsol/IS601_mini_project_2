@@ -2,7 +2,7 @@ import unittest
 
 from numpy.random import seed
 from numpy.random import randint
-from Statistics import Statistics
+from Statistics.Statistics import Statistics
 
 
 class MyTestCase(unittest.TestCase):
@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.Statistics, Statistics)
 
     def test_mean_calculator(self):
-        mean = self.Statistics.Mean(self.testData)
+        mean = self.Statistics.mean(self.testData)
         self.assertEqual(mean, 4.25)
 
 

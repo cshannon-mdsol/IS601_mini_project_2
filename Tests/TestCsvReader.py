@@ -1,8 +1,8 @@
 import unittest
-from CsvReader.CsvReader import CsvReader, ClassFactory
+from CsvReader.CsvReader import CsvReader, classfactory
 
 
-class myTestCase(unittest.TestCase):
+class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
         self.csv_reader = CsvReader('Tests/csv/employee_birthday.csv')
@@ -10,7 +10,7 @@ class myTestCase(unittest.TestCase):
     def test_return_data_as_objects(self):
         people = self.csv_reader.return_data_as_objects('person')
         self.assertIsInstance(people, list)
-        test_class = ClassFactory('person', self.csv_reader.data[0])
+        test_class = classfactory('person', self.csv_reader.data[0])
         for person in people:
             self.assertEqual(person.__name__, test_class.__name__)
 

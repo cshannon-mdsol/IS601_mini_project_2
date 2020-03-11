@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
         print("________Subtraction________")
         test_data = CsvReader('/Tests/csv/Subtraction.csv').data
         for row in test_data:
-            self.assertEqual(self.Calculator.Subtract(row['Value 1'], row['Value 2']), int(row['Result']))
+            self.assertEqual(self.Calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.Calculator.result, int(row['Result']))
 
             print(row['Value 2'], '-', row['Value 1'], '=', self.Calculator.result)
@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
         print("________Addition________")
         test_data = CsvReader('/Tests/csv/Addition.csv').data
         for row in test_data:
-            self.assertEqual(self.Calculator.Add(row['Value 1'], row['Value 2']), int(row['Result']))
+            self.assertEqual(self.Calculator.add(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.Calculator.result, int(row['Result']))
 
             print(row['Value 2'], '+', row['Value 1'], '=', self.Calculator.result)
@@ -33,7 +33,7 @@ class MyTestCase(unittest.TestCase):
         print("________Multiplication________")
         test_data = CsvReader('/Tests/csv/Multiplication.csv').data
         for row in test_data:
-            self.assertEqual(self.Calculator.Multiply(row['Value 1'], row['Value 2']), float(row['Result']))
+            self.assertEqual(self.Calculator.multiply(row['Value 1'], row['Value 2']), float(row['Result']))
             self.assertEqual(self.Calculator.result, float(row['Result']))
 
             print(row['Value 2'], '*', row['Value 1'], '=', self.Calculator.result)
@@ -42,7 +42,7 @@ class MyTestCase(unittest.TestCase):
         print("________Division________")
         test_data = CsvReader('/Tests/csv/Division.csv').data
         for row in test_data:
-            self.assertAlmostEqual(self.Calculator.Divide(row['Value 1'], row['Value 2']), float(row['Result']))
+            self.assertAlmostEqual(self.Calculator.divide(row['Value 1'], row['Value 2']), float(row['Result']))
             self.assertAlmostEqual(self.Calculator.result, float(row['Result']))
 
             print(row['Value 2'], '/', row['Value 1'], '=', self.Calculator.result)
@@ -51,7 +51,7 @@ class MyTestCase(unittest.TestCase):
         print("________Square________")
         test_data = CsvReader('/Tests/csv/Square.csv').data
         for row in test_data:
-            self.Calculator.Square(row['Value 1'])
+            self.Calculator.square(row['Value 1'])
             self.assertEqual(self.Calculator.result, int(row['Result']))
 
             print(row['Value 1'], '^2', '=', self.Calculator.result)
@@ -60,7 +60,7 @@ class MyTestCase(unittest.TestCase):
         print("________Square Root________")
         test_data = CsvReader('/Tests/csv/Square_Root.csv').data
         for row in test_data:
-            self.Calculator.SqRoot(int(row['Value 1']))
+            self.Calculator.sqroot(int(row['Value 1']))
             self.assertAlmostEqual(self.Calculator.result, float(row['Result']))
 
             print('√', row['Value 1'], '=', self.Calculator.result)
