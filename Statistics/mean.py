@@ -1,10 +1,10 @@
-from Calculator.Addition import Addition
-from Calculator.Division import Division
+from Calculator.Addition import addition
+from Calculator.Division import division
 
 
-def Mean(data):
+def mean(data):
     num_values = len(data)
     total = 0
     for num in data:
-        total = Addition(total, num)
-    return Division(num_values, total)
+        total = addition(total, num)
+    return division(num_values, total)
