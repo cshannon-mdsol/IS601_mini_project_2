@@ -12,6 +12,9 @@ from Statistics.StandardDeviation import stddev
 from Statistics.Variance import variance
 from Statistics.VarianceOfPopulationProportion import variance_of_population_proportion
 from Statistics.ZScore import z_score
+from Statistics.SampleMean import samplemean
+from Statistics.SampleStandardDeviation import samplestddev
+from Statistics.SampleVariance import samplevariance
 
 
 class Statistics(Calculator):
@@ -70,4 +73,16 @@ class Statistics(Calculator):
 
     def z_score(self, data):
         self.result = z_score(data)
+        return self.result
+
+    def sample_mean(self, data):
+        self.result = samplemean(data)
+        return self.result
+
+    def sample_stddev(self, data):
+        self.result = samplestddev(data)
+        return self.result
+
+    def sample_variance(self, data):
+        self.result = samplevariance(data)
         return self.result
