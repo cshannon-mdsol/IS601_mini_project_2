@@ -7,7 +7,6 @@ def samplemean(data, sample_size):
     try:
         total = 0
         sample = get_sample(data, sample_size)
-        num_values = len(sample)
         for num in sample:
             total = addition(total, num)
         return division(total, num_values)
