@@ -3,7 +3,7 @@ from Calculator.Subtraction import subtraction
 from Calculator.Multiplication import multiplication
 from Calculator.Division import division
 from Calculator.Square import square
-from Calculator.SquareRoot import squareroot
+from Calculator.SquareRoot import square_root
 
 
 class Calculator:
@@ -33,5 +33,5 @@ class Calculator:
         return self.result
 
     def sqroot(self, a):
-        self.result = squareroot(a)
+        self.result = square_root(a)
         return self.result
