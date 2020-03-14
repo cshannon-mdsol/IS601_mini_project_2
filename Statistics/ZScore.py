@@ -1,4 +1,4 @@
-from Statistics.PopulationMean import population_mean
+from Statistics.PopulationCorrelation import population_mean
 from Statistics.StandardDeviation import stddev
 
 

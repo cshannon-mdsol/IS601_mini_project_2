@@ -1,6 +1,6 @@
 from Calculator.Square import square
 from Calculator.Division import division
-from Statistics.PopulationMean import population_mean
+from Statistics.PopulationCorrelation import population_mean
 
 
 def variance(num):
