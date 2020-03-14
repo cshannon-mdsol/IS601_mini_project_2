@@ -1,10 +1,15 @@
 from Calculator.Calculator import Calculator
-from Statistics.Median import median
 from Statistics.Mean import mean
+from Statistics.Median import median
 from Statistics.Mode import mode
-from Statistics.StandardDeviation import stddev
 from Statistics.Variance import variance
+from Statistics.StandardDeviation import stddev
+from Statistics.Quartiles import quartiles
+from Statistics.Skewness import skewness
+from Statistics.SampleCorrelation import sample_correlation
+from Statistics.PopulationCorrelation import population_correlation
 from Statistics.ZScore import z_score
+from Statistics.MeanDeviation import mean_deviation
 
 
 class Statistics(Calculator):
