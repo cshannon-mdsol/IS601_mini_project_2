@@ -10,3 +10,5 @@ def stddev(num):
         print("Error - Cannot divide by 0")
     except ValueError:
         print("Error - Invalid data inputs")
+
+# https://www.mathsisfun.com/data/standard-deviation-formulas.html

@@ -16,3 +16,5 @@ def mode(num):
         print("Error - Cannot divide by 0")
     except ValueError:
         print("Error - Invalid data inputs")
+
+# # https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
