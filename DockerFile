@@ -1,8 +1,12 @@
 
 FROM python:3.8
 
-ADD . .
+ADD src /src
 
-RUN pip install -r requirements.txt
+#/ ADD . .
 
-CMD ["python", "-m", "unittest", "discover", "-s","Tests"]
+#/ RUN pip install -r requirements.txt
+
+CMD ["pyton", "./Tests/TestStatistics.py"]
+
+#/ CMD ["python", "-m", "unittest", "discover", "-s","Tests"]
