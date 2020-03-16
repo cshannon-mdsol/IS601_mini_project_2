@@ -7,6 +7,7 @@ from pprint import pprint
 class MyTestCase(unittest.TestCase):
     def setUp(self):
         self.Calculator = Calculator()
+        print("Hello")
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.Calculator, Calculator)
