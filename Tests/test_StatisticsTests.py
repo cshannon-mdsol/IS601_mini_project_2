@@ -41,7 +41,11 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.Statistics.mode(self.column1), float(row['mode']))
             self.assertEqual(self.Statistics.result, float(row['mode']))
 
-
+    def test_mode_statistics(self):
+        pprint("________Median Deviation________")
+        for row in self.test_mode:
+            self.assertEqual(self.Statistics.meandeviation(self.column1), float(row['mode']))
+            self.assertEqual(self.Statistics.result, float(row['mode']))
 
 
 if __name__ == '__main__':
