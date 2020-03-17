@@ -34,12 +34,14 @@ class MyTestCase(unittest.TestCase):
         for row in self.test_med:
             self.assertEqual(self.Statistics.median(self.column1), float(row['median']))
             self.assertEqual(self.Statistics.result, float(row['median']))
-         
+
     def test_mode_statistics(self):
         pprint("________Mode________")
         for row in self.test_mode:
+            pprint(float(row['mode']))
             self.assertEqual(self.Statistics.mode(self.column1), float(row['mode']))
             self.assertEqual(self.Statistics.result, float(row['mode']))
+            pprint(float(row['mode']))
 
 
 
