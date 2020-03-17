@@ -48,7 +48,7 @@ class MyTestCase(unittest.TestCase):
 
             for keys in row.keys():
                 if keys != "CalculatedMedian":
-                    if (row[keys] != "-"):
+                    if row[keys] != "-":
                         theList.append(float(row[keys]))
 
             self.assertEqual(self.Statistics.median(theList), float(row['CalculatedMedian']))
@@ -64,9 +64,21 @@ class MyTestCase(unittest.TestCase):
     def test_mode_statistics(self):
         pprint("________Median Deviation________")
         for row in self.test_mode:
-            print("- Handing data ", row)
-            # self.assertEqual(self.Statistics.meandeviation(self.column1), float(row['mode']))
-            # self.assertEqual(self.Statistics.result, float(row['mode']))
+            theList = []
+
+            for keys in row.keys():
+                if keys != "CalculatedMode":
+                    if row[keys] != "-":
+                        theList.append(int(row[keys]))
+
+            if row['CalculatedMode'] != "No mode found":
+                self.assertEqual(self.Statistics.mode(theList), int(row['CalculatedMode']))
+                self.assertEqual(self.Statistics.result, float(row['CalculatedMode']))
+                print(self.Statistics.result, " equals ", int(row['CalculatedMode']))
+            else:
+                self.assertEqual(self.Statistics.mode(theList), (row['CalculatedMode']))
+                self.assertEqual(self.Statistics.result, (row['CalculatedMode']))
+                print(self.Statistics.result, " equals ", (row['CalculatedMode']))
 
 
 if __name__ == '__main__':
