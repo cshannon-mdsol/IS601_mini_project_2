@@ -39,6 +39,3 @@ def mean_deviation(data):
         print("Error - Invalid data inputs")
 
 
-#overloaded function if someone wants mean absolute mean deviation
-def mean_deviation(data, wantsAbsolute):
-    return (data)

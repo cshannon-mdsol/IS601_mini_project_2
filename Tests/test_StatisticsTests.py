@@ -29,6 +29,15 @@ class MyTestCase(unittest.TestCase):
             theList = [row['Value1'], row['Value2'], row['Value3'], row['Value4'], row['Value5'], row['Value6'], row['Value7']]
             self.assertEqual(self.Statistics.mean(theList), float(row['CalculatedMean']))
             self.assertEqual(self.Statistics.result, float(row['CalculatedMean']))
+            #print("-- ", theList)
+
+    def test_mean_deviation_statistics(self):
+        pprint("________Mean Deviation________")
+        for row in self.test_mean_dev:
+            print(row)
+            theList = [row['Value1'], row['Value2'], row['Value3'], row['Value4'], row['Value5'], row['Value6'], row['Value7']]
+            self.assertEqual(self.Statistics.meandeviation(theList), float(row['CalculatedMean']))
+            #self.assertEqual(self.Statistics.result, float(row['CalculatedMean']))
             print("-- ", theList)
 
     def test_median_statistics(self):

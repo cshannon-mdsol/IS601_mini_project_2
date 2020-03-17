@@ -1,8 +1,2 @@
-MeanDeviationData
-1
-2
-5
-3
-4
-7
-6
+Value1,Value2,Value3,Value4,Value5,Value6,Value7,CalculatedMean,CalculatedMeanDeviation
+1,2,3,4,5,6,7,4,1.714
