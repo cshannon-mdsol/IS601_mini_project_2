@@ -26,8 +26,18 @@ class MyTestCase(unittest.TestCase):
     def test_mean_statistics(self):
         pprint("________Mean________")
         for row in self.test_mean:
-            self.assertEqual(self.Statistics.mean(row['Value 1'], row['Value 2']), float(row['Result']))
-            self.assertEqual(self.Statistics.result, float(row['mean']))
+            theList = [row['Value1'], row['Value2'], row['Value3'], row['Value4'], row['Value5'], row['Value6'], row['Value7']]
+            self.assertEqual(self.Statistics.mean(theList), float(row['CalculatedMean']))
+            self.assertEqual(self.Statistics.result, float(row['CalculatedMean']))
+            print(self.Statistics.result, " equals ", row['CalculatedMean'])
+
+    def test_mean_deviation_statistics(self):
+        pprint("________Mean Deviation________")
+        for row in self.test_mean_dev:
+            theList = [row['Value1'], row['Value2'], row['Value3'], row['Value4'], row['Value5'], row['Value6'], row['Value7']]
+            self.assertEqual(self.Statistics.meandeviation(theList), float(row['CalculatedMeanDeviation']))
+            self.assertEqual(self.Statistics.result, float(row['CalculatedMeanDeviation']))
+            print(self.Statistics.result, " equals ", row['CalculatedMeanDeviation'])
 
     def test_median_statistics(self):
         pprint("________Median________")
@@ -41,7 +51,12 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.Statistics.mode(self.column1), float(row['mode']))
             self.assertEqual(self.Statistics.result, float(row['mode']))
 
-
+    def test_mode_statistics(self):
+        pprint("________Median Deviation________")
+        for row in self.test_mode:
+            print("- Handing data ", row)
+            #self.assertEqual(self.Statistics.meandeviation(self.column1), float(row['mode']))
+            #self.assertEqual(self.Statistics.result, float(row['mode']))
 
 
 if __name__ == '__main__':
