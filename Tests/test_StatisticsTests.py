@@ -37,10 +37,10 @@ class MyTestCase(unittest.TestCase):
         for row in self.test_mean_dev:
             theList = [row['Value1'], row['Value2'], row['Value3'], row['Value4'], row['Value5'], row['Value6'],
                        row['Value7']]
-            pprint(theList)
-            self.assertEqual(self.Statistics.meandeviation(theList), float(row['CalculatedMeanDeviation']))
-            self.assertEqual(self.Statistics.result, float(row['CalculatedMeanDeviation']))
-            print(self.Statistics.result, " equals ", row['CalculatedMeanDeviation'])
+            #pprint(theList)
+            self.assertAlmostEqual(self.Statistics.meandeviation(theList), float(row['CalculatedMeanDeviation']), 5)
+            self.assertAlmostEqual(self.Statistics.result, float(row['CalculatedMeanDeviation']), 5)
+            print(self.Statistics.result, " almost equals to 5 decimal places ", row['CalculatedMeanDeviation'])
 
     def test_median_statistics(self):
         pprint("________Median________")
