@@ -3,21 +3,25 @@ import random
 
 # 1. generate random number without seed between a range of two numbers
 def generate_number(x, y):
+    #return number
     pass
 
 
 # 2. generate random number with a seed between a range of two numbers
 def generate_number(x, y, seedValue):
+    #return number
     pass
 
 
 # 3. generate a list of N random numbers with a seed between a range of two numbers
 def generate_random_numbers(x, y, seedValue, howManyNumbersToReturn):
+    #return an array of numbers
     pass
 
 
 # 4. select a random item from a list
 def random_from_list(listArray):
+    #return item
     pass
 
 
@@ -26,11 +30,13 @@ def random_from_list(listArray):
 
 # 6. Select N number of items from a list without a seed
 def pickFromList(listArray, howManyItems):
+    #return array
     pass
 
 
 # 7. Select n number of items from a list with a seed
 def pickFromList(listArray, howManyItems, seedValue):
+    #return array
     pass
 
 
