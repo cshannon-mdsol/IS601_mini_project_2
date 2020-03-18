@@ -1,5 +1,5 @@
-import random
-
+from random import seed
+from random import random
 
 # 1. generate random number without seed between a range of two numbers
 def generate_number(x, y):
@@ -9,14 +9,24 @@ def generate_number(x, y):
 
 # 2. generate random number with a seed between a range of two numbers
 def generate_number(x, y, seedValue):
-    #return number
-    pass
+    #set the seed value. https://machinelearningmastery.com/how-to-generate-random-numbers-in-python/
+    seed(seedValue)
+
+    #return a random number between x and y
+    return random.randrange(x, y)
 
 
 # 3. generate a list of N random numbers with a seed between a range of two numbers
-def generate_random_numbers(x, y, seedValue, howManyNumbersToReturn):
-    #return an array of numbers
-    pass
+def generate_random_numbers(x, y, seedValue, listSize):
+    seed(seedValue)
+    theArray = []
+
+    # loop listSize times to generate a random number and add it to the list
+    for i in range(listSize):
+        theArray.append(random.randrange(x, y))
+
+    #return the newly-filled array of random numbers
+    return theArray
 
 
 # 4. select a random item from a list

@@ -11,7 +11,6 @@ from Statistics.Quartiles import quartiles
 from Statistics.ZScore import z_score
 from Statistics.MeanDeviation import mean_deviation
 
-
 class Statistics(Calculator):
     data = []
 
@@ -49,5 +48,6 @@ class Statistics(Calculator):
     def zscore(self, data):
         self.result = z_score(data)
         return self.result
+
 
     pass
