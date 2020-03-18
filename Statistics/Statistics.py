@@ -9,7 +9,7 @@ from Statistics.Mode import mode
 #from Statistics.SampleCorrelation import sample_correlation
 #from Statistics.PopulationCorrelation import population_correlation
 #from Statistics.ZScore import z_score
-#from Statistics.MeanDeviation import mean_deviation
+from Statistics.MeanDeviation import mean_deviation
 
 
 class Statistics(Calculator):
@@ -30,7 +30,8 @@ class Statistics(Calculator):
         self.result = mode(data)
         return self.result
 
-    def variance(self, data):
-        self.result = variance(data)
+    def meandeviation(self, data):
+        self.result = mean_deviation(data)
         return self.result
+
     pass
