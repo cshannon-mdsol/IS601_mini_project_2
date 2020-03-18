@@ -1,10 +1,10 @@
-from Statistics.PopulationCorrelation import population_mean
+from Statistics.Mean import mean
 from Statistics.StandardDeviation import stddev
 
 
 def z_score(num):
     try:
-        z_mean = population_mean(num)
+        z_mean = mean(num)
         sd = stddev(num)
         z_list = []
         for x in num:
