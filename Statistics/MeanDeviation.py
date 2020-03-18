@@ -21,5 +21,3 @@ def mean_deviation(data):
         print("Error - Cannot divide by 0")
     except ValueError:
         print("Error - Invalid data inputs")
-
-
