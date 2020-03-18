@@ -37,6 +37,7 @@ class MyTestCase(unittest.TestCase):
         for row in self.test_mean_dev:
             theList = [row['Value1'], row['Value2'], row['Value3'], row['Value4'], row['Value5'], row['Value6'],
                        row['Value7']]
+            pprint(theList)
             self.assertEqual(self.Statistics.meandeviation(theList), float(row['CalculatedMeanDeviation']))
             self.assertEqual(self.Statistics.result, float(row['CalculatedMeanDeviation']))
             print(self.Statistics.result, " equals ", row['CalculatedMeanDeviation'])
@@ -81,11 +82,34 @@ class MyTestCase(unittest.TestCase):
                 print(self.Statistics.result, " equals ", (row['CalculatedMode']))
 
     def test_variance_statistics(self):
-        for row in self.test_mode:
-            pprint(row['variance'])
-        self.assertEqual(self.statistics.variance(self.column1), float(row['variance']))
-        self.assertEqual(self.statistics.result, float(row['variance']))
+        pprint("________Variance________")
+        for row in self.test_var:
+            theList = [int(row['Value1']), int(row['Value2']),int(row['Value3']), int(row['Value4']), int(row['Value5'])]
+            self.assertEqual(self.Statistics.variance(theList),  float(row['Variance']))
+            self.assertEqual(self.Statistics.result, float(row['Variance']))
+            pprint(self.Statistics.result)
 
+    def test_standard_deviation_statistics(self):
+        pprint("________StandardDeviation________")
+        for row in self.test_var:
+            self.assertAlmostEqual(self.Statistics.stddev(float(row['Variance'])), float(row['stddev']))
+            self.assertAlmostEqual(self.Statistics.result, float(row['stddev']))
+            pprint(self.Statistics.result)
+
+
+
+   # def test_quartiles_statistics(self):
+    #    pprint("________Quartiles________")
+     #   for row in self.test_var:
+      #      theList1 = [int(row['Value1']), int(row['Value2']),int(row['Value3']), int(row['Value4']), int(row['Value5'])]
+       ##    self.assertEqual(self.Statistics.result, float(row['Variance']))
+         #   pprint(self.Statistics.result)
+
+    def test_z_score_statistics(self):
+        for row in self.test_z_score:
+            pprint(row)
+            self.assertAlmostEqual(self.Statistics.zscore(float(row['zscore'])), float(row['zscore']))
+            self.assertEqual(self.statistics.result, self.column_zscore)
 
 
 if __name__ == '__main__':

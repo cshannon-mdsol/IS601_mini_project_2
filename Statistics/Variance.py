@@ -1,16 +1,25 @@
+#https://www.mathsisfun.com/data/standard-deviation.html
 from Calculator.Square import square
 from Calculator.Division import division
-from Statistics.PopulationCorrelation import population_mean
+from Statistics.Mean import mean
+from Calculator.Subtraction import subtraction
+from pprint import pprint
 
-
-def variance(num):
+def variance(data):
     try:
-        pop_mean = population_mean(num)
-        num_values = len(num)
+        # 1. find the mean of the data
+        calculatedMean = mean(data)
+        distanceArray = []
+        meanDeviationValue = 0
+
+        for item in data:
+            distanceArray.append(abs(subtraction(item, calculatedMean)))
+
+        num_values = len(data)
         x = 0
-        for i in num:
-            x = x + square(i-pop_mean)
-        return division(x, num_values)
+        for i in distanceArray:
+            x = x + square(i)
+        return division(num_values,x)
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
     except ValueError:
