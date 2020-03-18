@@ -1,5 +1,6 @@
 from Statistics.ZScore import z_score
 
+
 def sample_correlation(data, data1):
     try:
         z1 = z_score(data)
