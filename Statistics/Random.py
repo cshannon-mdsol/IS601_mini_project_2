@@ -1,5 +1,39 @@
 import random
 
+
+# 1. generate random number without seed between a range of two numbers
+def generate_number(x, y):
+    pass
+
+
+# 2. generate random number with a seed between a range of two numbers
+def generate_number(x, y, seedValue):
+    pass
+
+
+# 3. generate a list of N random numbers with a seed between a range of two numbers
+def generate_random_numbers(x, y, seedValue, howManyNumbersToReturn):
+    pass
+
+
+# 4. select a random item from a list
+def random_from_list(listArray):
+    pass
+
+
+# 5. set a seed and randomly select the same value from a list
+# (Not actually sure what this one means, need to think about it)
+
+# 6. Select N number of items from a list without a seed
+def pickFromList(listArray, howManyItems):
+    pass
+
+
+# 7. Select n number of items from a list with a seed
+def pickFromList(listArray, howManyItems, seedValue):
+    pass
+
+
 # Generate a random number without a seed between a range of two numbers - Both Integer and Decimal
 random.randint(1, 1000)
 
