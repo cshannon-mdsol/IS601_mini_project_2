@@ -43,6 +43,13 @@ class MyTestCase(unittest.TestCase):
 
 
 
+    def test_variance_statistics(self):
+        for row in self.test_mode:
+            pprint(row['variance'])
+        self.assertEqual(self.statistics.variance(self.column1), float(row['variance']))
+        self.assertEqual(self.statistics.result, float(row['variance']))
+
+
 
 if __name__ == '__main__':
     unittest.main()

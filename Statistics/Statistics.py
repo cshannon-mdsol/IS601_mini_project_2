@@ -30,4 +30,7 @@ class Statistics(Calculator):
         self.result = mode(data)
         return self.result
 
+    def variance(self, data):
+        self.result = variance(data)
+        return self.result
     pass
