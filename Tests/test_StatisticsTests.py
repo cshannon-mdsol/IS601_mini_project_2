@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
     test_var = CsvReader('/Tests/csv/Variance.csv').data
     test_stddev = CsvReader('/Tests/csv/StdDeviation.csv').data
     test_quar = CsvReader('/Tests/csv/Quartiles.csv').data
-
+    col_quar = [row['Value1'] for row in test_quar]
     test_skew = CsvReader('/Tests/csv/Skewness.csv').data
     test_sam_corr = CsvReader('/Tests/csv/SampleCorrelation.csv').data
     col_sam_corr1 = [row['Value1'] for row in test_sam_corr]
@@ -22,6 +22,7 @@ class MyTestCase(unittest.TestCase):
 
     test_z_score = CsvReader('/Tests/csv/ZScore.csv').data
     col_zscore = [row['zscore'] for row in test_z_score]
+    col_zscore1 = [row['zscore1'] for row in test_z_score]
 
 
 
@@ -117,29 +118,28 @@ class MyTestCase(unittest.TestCase):
         pprint("________Skewness________")
         for row in self.test_unitTest:
             theList = [float(row['Mean']), float(row['Median']),float(row['stddev'])]
-            self.assertAlmostEqual(self.Statistics.skewness(theList), float(row['skewed']))
+            self.assertAlmostEqual(float(self.Statistics.skewness(theList)), float(row['skewed']))
             self.assertAlmostEqual(self.Statistics.result, float(row['skewed']))
 
 
-   # def test_quartiles_statistics(self):
-    #    pprint("________Quartiles________")
-     #   for row in self.test_var:
-      #      theList1 = [int(row['Value1']), int(row['Value2']),int(row['Value3']), int(row['Value4']), int(row['Value5'])]
-       ##    self.assertEqual(self.Statistics.result, float(row['Variance']))
-         #   pprint(self.Statistics.result)
+    def test_quartiles_statistics(self):
+        pprint("________Quartiles________")
+        for row in self.test_quar:
+           self.assertEqual(self.Statistics.quartiles(self.col_quar), row['Q2'])
+           self.assertEqual(int(self.Statistics.result), row['Q2'])
 
     def test_z_score_statistics(self):
         pprint("________ZScore________")
         for row in self.test_z_score:
-            self.assertEqual(self.Statistics.zscore(self.col_zscore), self.col_zscore)
-            self.assertEqual(self.Statistics.result, self.col_zscore)
+            self.assertEqual(self.Statistics.zscore(self.col_zscore), self.col_zscore1)
+            self.assertEqual(self.Statistics.result, self.col_zscore1)
 
     def test_correlation_statistics(self):
         pprint("________Correlation________")
         for row in self.test_sam_corr:
             #pprint(self.col_sam_corr1)
             self.assertEqual(self.Statistics.correlation( self.col_sam_corr1,  self.col_sam_corr2), float(row['correlation']))
-            self.assertEqual(self.Statistics.result, float(row['correlation']))
+            self.assertEqual(self.Statistics.result, row['correlation'])
 
 if __name__ == '__main__':
     unittest.main()
