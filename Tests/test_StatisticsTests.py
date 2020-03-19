@@ -106,7 +106,9 @@ class MyTestCase(unittest.TestCase):
     def test_standard_deviation_statistics(self):
         pprint("________StandardDeviation________")
         for row in self.test_var:
-            self.assertAlmostEqual(self.Statistics.stddev(float(row['Variance'])), float(row['stddev']))
+            theList = [int(row['Value1']), int(row['Value2']), int(row['Value3']), int(row['Value4']),
+                       int(row['Value5'])]
+            self.assertAlmostEqual(self.Statistics.stddev(theList), float(row['stddev']))
             self.assertAlmostEqual(self.Statistics.result, float(row['stddev']))
             pprint(self.Statistics.result)
 
