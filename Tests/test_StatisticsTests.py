@@ -11,11 +11,19 @@ class MyTestCase(unittest.TestCase):
     test_var = CsvReader('/Tests/csv/Variance.csv').data
     test_stddev = CsvReader('/Tests/csv/StdDeviation.csv').data
     test_quar = CsvReader('/Tests/csv/Quartiles.csv').data
+
     test_skew = CsvReader('/Tests/csv/Skewness.csv').data
     test_sam_corr = CsvReader('/Tests/csv/SampleCorrelation.csv').data
+    col_sam_corr1 = [row['Value1'] for row in test_sam_corr]
+    col_sam_corr2 = [row['Value2'] for row in test_sam_corr]
     test_pop_corr = CsvReader('/Tests/csv/PopulationCorrelation.csv').data
-    test_z_score = CsvReader('/Tests/csv/ZScore.csv').data
     test_mean_dev = CsvReader('/Tests/csv/MeanDeviation.csv').data
+    test_unitTest = CsvReader('/Tests/csv/UnitTestForStatistic.csv').data
+
+    test_z_score = CsvReader('/Tests/csv/ZScore.csv').data
+    col_zscore = [row['zscore'] for row in test_z_score]
+
+
 
     def setUp(self):
         self.Statistics = Statistics()
@@ -103,19 +111,34 @@ class MyTestCase(unittest.TestCase):
             pprint(self.Statistics.result)
 
 
-# def test_quartiles_statistics(self):
-#    pprint("________Quartiles________")
-#   for row in self.test_var:
-#      theList1 = [int(row['Value1']), int(row['Value2']),int(row['Value3']), int(row['Value4']), int(row['Value5'])]
-##    self.assertEqual(self.Statistics.result, float(row['Variance']))
-#   pprint(self.Statistics.result)
+    def test_skewness_statistics(self):
+        pprint("________Skewness________")
+        for row in self.test_unitTest:
+            theList = [float(row['Mean']), float(row['Median']),float(row['stddev'])]
+            self.assertAlmostEqual(self.Statistics.skewness(theList), float(row['skewed']))
+            self.assertAlmostEqual(self.Statistics.result, float(row['skewed']))
 
-#  def test_z_score_statistics(self):
-#      for row in self.test_z_score:
-#          pprint(row)
-#          self.assertAlmostEqual(self.Statistics.zscore(float(row['zscore'])), float(row['zscore']))
-#            self.assertEqual(self.statistics.result, self.column_zscore)
 
+   # def test_quartiles_statistics(self):
+    #    pprint("________Quartiles________")
+     #   for row in self.test_var:
+      #      theList1 = [int(row['Value1']), int(row['Value2']),int(row['Value3']), int(row['Value4']), int(row['Value5'])]
+       ##    self.assertEqual(self.Statistics.result, float(row['Variance']))
+         #   pprint(self.Statistics.result)
+
+    def test_z_score_statistics(self):
+        pprint("________ZScore________")
+        for row in self.test_z_score:
+            self.assertEqual(self.Statistics.zscore(self.col_zscore), self.col_zscore)
+            self.assertEqual(self.Statistics.result, self.col_zscore)
+
+    def test_correlation_statistics(self):
+        pprint("________Correlation________")
+        for row in self.test_sam_corr:
+            #pprint(self.col_sam_corr1)
+            self.assertEqual(self.Statistics.correlation( self.col_sam_corr1,  self.col_sam_corr2), float(row['correlation']))
+            self.assertEqual(self.Statistics.result, float(row['correlation']))
 
 if __name__ == '__main__':
     unittest.main()
+

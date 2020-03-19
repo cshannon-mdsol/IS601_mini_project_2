@@ -5,11 +5,12 @@ from Statistics.Mode import mode
 from Statistics.Variance import variance
 from Statistics.StandardDeviation import stddev
 from Statistics.Quartiles import quartiles
-#from Statistics.Skewness import skewness
-#from Statistics.SampleCorrelation import sample_correlation
+from Statistics.Skewness import skewness
+from Statistics.SampleCorrelation import sample_correlation
 #from Statistics.PopulationCorrelation import population_correlation
 from Statistics.ZScore import z_score
 from Statistics.MeanDeviation import mean_deviation
+
 
 class Statistics(Calculator):
     data = []
@@ -49,5 +50,12 @@ class Statistics(Calculator):
         self.result = z_score(data)
         return self.result
 
+    def skewness(self, data):
+        self.result = skewness(data)
+        return self.result
+
+    def correlation(self, data, data1):
+        self.result = sample_correlation(data, data1)
+        return self.result
 
     pass
