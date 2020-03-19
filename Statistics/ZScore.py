@@ -1,16 +1,18 @@
 from Statistics.Mean import mean
 from Statistics.StandardDeviation import stddev
-
+from pprint import pprint
 
 def z_score(num):
     try:
         z_mean = mean(num)
-        sd = stddev(num)
+        sd =stddev(num)
         z_list = []
+
         for x in num:
-            z = round(((x - z_mean) / sd), 6)
+            z = round(((float(x) - float(z_mean)) / float(sd)), 6)
             z_list.append(z)
         return z_list
+
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
     except ValueError:
