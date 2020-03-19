@@ -8,7 +8,8 @@ def stddev(num):
         # 1. Goes into Variance() to get the the mean and the variance
         variance_float = variance(num)
         # 2. Gets sqrt to get the standard Deviation
-        return round(square_root(variance_float), 5)
+        x = round(square_root(variance_float), 5)
+        return int(x)
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
     except ValueError:

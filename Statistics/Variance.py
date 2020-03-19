@@ -20,7 +20,7 @@ def variance(data):
         x = 0
         for i in distanceArray:
             x = x + square(i)
-        return division(num_values,x)
+        return int(division(num_values,x))
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
     except ValueError:
