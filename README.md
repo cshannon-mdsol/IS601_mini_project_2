@@ -17,8 +17,6 @@ Basic Calculations:
 
 Statistical Functions: 
 
-[Link to References Directory](https://github.com/hl533/IS601-CalculatorProject/tree/master/References)
-
 - [x] Mean
 - [x] Median
 - [x] Mode
