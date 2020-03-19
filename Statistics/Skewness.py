@@ -19,7 +19,8 @@ def skewness(data):
             x = i
         pprint(distanceArray[1])
         x = 3 * (distanceArray[0] - distanceArray[1]) / distanceArray[2]
-        pprint(x)
+        pprint(round(x, 1))
+
         return x
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")

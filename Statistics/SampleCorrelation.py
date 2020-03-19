@@ -18,9 +18,11 @@ def sample_correlation(data, data1):
         mean2 =mean(data1)
         List1=[]
         List2=[]
+
         for num in data:
-            a = subtraction(mean1,num)
+            a = subtraction(int(round(mean1,0)),num)
             List1.append(a)
+
         for num in data1:
             b = subtraction(mean2,num)
             List2.append(b)
@@ -31,6 +33,8 @@ def sample_correlation(data, data1):
 
         d=0
         e=0
+       # pprint(List1)
+       # pprint(List2)
         for num in List1:
             d = d+ square(num)
         for num in List2:
@@ -39,6 +43,11 @@ def sample_correlation(data, data1):
         f = multiplication(d, e)
         g = square_root(f)
         h = division(cc, g)
+        pprint(d)
+        pprint(e)
+        pprint(f)
+        pprint(g)
+
 
         return h
     except ZeroDivisionError:
