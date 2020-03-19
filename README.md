@@ -5,9 +5,9 @@ Mini Project 2 - Stefan DeRosa, Kimberly McDaniel, Chris Shannon
 [![Build Status](https://travis-ci.com/cshannon-mdsol/IS601_mini_project_2.svg?token=SKBo1dSTVngF4YhyWNFn&branch=master)](https://travis-ci.com/cshannon-mdsol/IS601_mini_project_2)
 
 
-This project will have 2 parts:
+This project will have multiple parts:
 
-Basic Calculations:
+Basic Calculations (Calculator.py):
 1. Addition
 2. Subtraction
 3. Multiplication
@@ -15,8 +15,7 @@ Basic Calculations:
 5. Square
 6. Square Root
 
-Statistical Functions: 
-
+Statistical Functions (Statistics.py): 
 - [x] Mean
 - [x] Median
 - [x] Mode
@@ -28,6 +27,25 @@ Statistical Functions:
 - [x] Population Correlation
 - [x] Z-Score
 - [x] Mean Deviation / Mean Absolute Deviation
+
+Random Generator Functions (Random.py): 
+- [ ] Generate random number without seed
+- [ ] Generate random number with seed
+- [ ] Generate a list of random numbers with a seed between a range of provided numbers
+- [ ] Select random item from a list
+- [ ] Select same value from a list with seed
+- [ ] Select items from a list without seed
+- [ ] Select items from a list with seed
+
+Population Sampling Functions (Sampling.py): 
+- [ ] Simple random sampling
+- [ ] Systematic sampling
+- [ ] Confidence Interval for a Sample
+- [ ] Margin of Error
+- [ ] How to Find a Confidence Interval
+- [ ] Cochran's Sample Size Formula
+- [ ] How to find a sample size given a confidence interval and width (unknown population standard deviation)
+- [ ] How to find a sample size given a confidence interval and width (known population standard deviation)
 
 This uses both built-in functions and CSV data sheets to test the 
 functionality of the calculator.
