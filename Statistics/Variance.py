@@ -9,6 +9,7 @@ def variance(data):
     try:
         # 1. find the mean of the data
         calculatedMean = mean(data)
+        pprint(calculatedMean)
         distanceArray = []
         meanDeviationValue = 0
 
