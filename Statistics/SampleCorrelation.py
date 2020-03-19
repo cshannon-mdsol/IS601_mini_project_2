@@ -8,6 +8,7 @@ from Calculator.SquareRoot import square_root
 from pprint import pprint
 
 
+
 def sample_correlation(data, data1):
     try:
         mean1 = mean(data)

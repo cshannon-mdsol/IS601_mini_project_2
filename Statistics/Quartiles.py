@@ -1,4 +1,5 @@
-from pprint import pprint
+from Calculator.Square import square
+from Calculator.Division import division
 
 
 def quartiles(data):
