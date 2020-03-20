@@ -8,7 +8,7 @@ class GenNumberListSeed:
     @staticmethod
     def list_num(x, y, nut, realm):
         if isinstance(x, float):
-            return list_float(x,y, nut, realm)
+            return list_float(x, y, nut, realm)
         series = []
         seed(nut)
         for each in range(realm):
