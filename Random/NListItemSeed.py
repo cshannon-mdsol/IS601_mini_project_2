@@ -1,6 +1,11 @@
-from random import seed
-from random import random
+from numpy.random import seed
+from Random.NListItem import NListItem
 
 
-def pick_from_list_seed(list_array, how_many_items, seed_value):
-    pass
+class NListItemSeed:
+
+    @staticmethod
+    def pick_from_list_seed(series, realm, nut):
+        seed(nut)
+        series2 = NListItem.pick_from_list(series, realm)
+        return series2

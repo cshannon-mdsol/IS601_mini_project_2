@@ -1,7 +1,10 @@
 from random import seed
-from random import random
+from Random.ListItem import ListItem
 
 
-def random_from_list_seed(list_array, seed_value):
-    seed(seed_value)
-    pass
+class ListItemSeed:
+
+    @staticmethod
+    def rand_list_seed(series, nut):
+        seed(nut)
+        return ListItem.list_item(series)
