@@ -1,4 +1,4 @@
-from numpy.random import seed
+from random import seed
 from Random.NListItem import NListItem
 
 

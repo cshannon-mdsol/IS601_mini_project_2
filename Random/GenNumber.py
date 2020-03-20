@@ -1,5 +1,5 @@
-from numpy.random import randint
-from numpy.random import uniform
+from random import randint
+from random import uniform
 
 
 class GenNumber:

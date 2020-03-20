@@ -1,4 +1,4 @@
-from numpy.random import randint
+from random import randint
 
 
 class ListItem:

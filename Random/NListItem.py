@@ -1,4 +1,4 @@
-from numpy.random import randint
+from random import randint
 
 
 class NListItem:
@@ -9,5 +9,5 @@ class NListItem:
         length = len(series)
         for each in range(realm):
             position = randint(0, length-1)
-            series2.append(series[position])
+            series.append(series[position])
         return series2
