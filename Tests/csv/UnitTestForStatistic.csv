@@ -1,4 +1,2 @@
 Value1,Value2,Value3,Value4,Value5,Value6,Value7,Value8,Value9,Mode,Mean,Median,Variance,stddev,skewed,correlation
-6,3,9,6,6,5,9,3,1,6,5.875,6,34.88889,5.906682,-0.06349,0.0546
-,,,,,,,,,,,,,,,
-,,,,,,,,,,-0.06348742,,,,,
+6,3,9,6,6,5,9,3,1,6,5.875,6,34.88889,5.906682,-0.50789,0.0546
