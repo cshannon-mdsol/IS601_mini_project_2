@@ -53,7 +53,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_pick_from_list(self):
         series = GenNumberListSeed.list_num(1, 1000, 55, 20)
-        result = NListItem.pick_from_list(3)
+        result = NListItem.pick_from_list(series, 3)
         self.assertEqual(result, [1, 3, 7, 9])
 
     def test_pick_from_list_seed(self):
