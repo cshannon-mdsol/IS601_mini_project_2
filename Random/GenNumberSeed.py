@@ -3,14 +3,18 @@ from numpy.random import randint
 from numpy.random import uniform
 
 
-def rand_num(x, y, seed):
-    seed(seed)
-    number = randint(x, y)
-    if instance(x, float):
-        return GenNumberSeed.rand_float(x, y, seed)
-    return number
+class GenNumberSeed:
 
-def rand_float(x, y, seed):
-    seed(seed)
-    number = uniform(x, y)
-    return number
+    @staticmethod
+    def rand_num(x, y, nut):
+        seed(nut)
+        number = randint(x, y)
+        if isinstance(x, float):
+            return GenNumberSeed.rand_float(x, y, nut)
+        return number
+
+    @staticmethod
+    def rand_float(x, y, nut):
+        seed(nut)
+        number = uniform(x, y)
+        return number

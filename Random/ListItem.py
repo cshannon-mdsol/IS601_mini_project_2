@@ -1,7 +1,10 @@
 from numpy.random import randint
 
 
-def list_item(list):
-    length = len(list)
-    position = randint(0, length-1)
-    return list[position]
+class ListItem:
+
+    @staticmethod
+    def list_item(series):
+        length = len(series)
+        position = randint(0, length-1)
+        return series[position]

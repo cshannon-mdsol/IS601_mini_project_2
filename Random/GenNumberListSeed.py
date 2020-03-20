@@ -3,20 +3,24 @@ from numpy.random import randint
 from numpy.random import uniform
 
 
-def list_num(x, y, seed, range):
-    if instance(x, float):
-        return list_float(x,y, seed, range)
-    list = []
-    seed(seed)
-    for _ in range(range):
-        number = randint(x, y)
-        list.append(number)
-    return list
+class GenNumberListSeed:
 
-def list_float(x, y, seed, range):
-    list = []
-    seed(seed)
-    for _ in range(range):
-        number = uniform(x, y)
-        list.append(number)
-    return list
+    @staticmethod
+    def list_num(x, y, nut, realm):
+        if isinstance(x, float):
+            return list_float(x,y, nut, realm)
+        series = []
+        seed(nut)
+        for each in range(realm):
+            number = randint(x, y)
+            series.append(number)
+        return series
+
+    @staticmethod
+    def list_float(x, y, nut, realm):
+        series = []
+        seed(nut)
+        for each in range(realm):
+            number = uniform(x, y)
+            series.append(number)
+        return series

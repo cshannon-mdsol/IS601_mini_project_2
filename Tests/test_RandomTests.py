@@ -15,11 +15,11 @@ class MyTestCase(unittest.TestCase):
 
     def test_gen_num(self):
         result = GenNumber.rand_num()
-        self.assertEqual(instance(result, num), True)
+        self.assertEqual(isinstance(result, int), True)
 
     def test_gen_num_float(self):
         result = GenNumber.rand_float()
-        self.assertEqual(instance(result, float), True)
+        self.assertEqual(isinstance(result, float), True)
 
     def test_gen_num_seed(self):
         result = GenNumberSeed.rand_num()
@@ -42,23 +42,23 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(result, result2)
 
     def test_list_item(self):
-        list = GenNumberListSeed.list_num()
-        result = ListItem.list_item(list)
+        series = GenNumberListSeed.list_num()
+        result = ListItem.list_item(series)
         self.assertEqual(result, )
 
     def test_rand_list_seed(self):
-        list = GenNumberListSeed.list_num(0, 10, 5, 4)
-        result = ListItemSeed.rand_list_seed(3, list)
+        series = GenNumberListSeed.list_num(0, 10, 5, 4)
+        result = ListItemSeed.rand_list_seed(3, series)
         self.assertEqual(result, 1)
 
     def test_pick_from_list(self):
-        list = GenNumberListSeed.list_num()
-        result = NListItem.pick_from_list(lst, )
+        series = GenNumberListSeed.list_num()
+        result = NListItem.pick_from_list(series, )
         self.assertEqual(result, [])
 
     def test_pick_from_list_seed(self):
-        list = GenNumberListSeed.list_num(0, 10, 10, 3)
-        result = NListItemSeed.pick_from_list_seed(3, list, 5)
+        series = GenNumberListSeed.list_num(0, 10, 10, 3)
+        result = NListItemSeed.pick_from_list_seed(3, series, 5)
         self.assertEqual(result, [9, 8, 9, 9, 8])
 
 
