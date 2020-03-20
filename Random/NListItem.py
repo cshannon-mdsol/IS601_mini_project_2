@@ -1,4 +1,4 @@
-from numpy.random import randint
+from random import randint
 
 
 class NListItem:
@@ -11,5 +11,3 @@ class NListItem:
             position = randint(0, length-1)
             series.append(series[position])
         return series2
-
-

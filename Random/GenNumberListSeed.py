@@ -1,6 +1,6 @@
-from numpy.random import seed
-from numpy.random import randint
-from numpy.random import uniform
+from random import seed
+from random import randint
+from random import uniform
 
 
 class GenNumberListSeed:
