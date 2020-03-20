@@ -1,6 +1,7 @@
-from random import seed
-from random import random
+from numpy.random import randint
 
 
-def random_from_list(list_array):
-    pass
+def list_item(list):
+    length = len(list)
+    position = randint(0, length-1)
+    return list[position]

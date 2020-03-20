@@ -1,7 +1,16 @@
-from random import seed
-from random import random
+from numpy.random import seed
+from numpy.random import randint
+from numpy.random import uniform
 
 
-def generate_number_seed(x, y, seed_value):
-    seed(seed_value)
-    return random.randrange(x, y)
+def rand_num(x, y, seed):
+    seed(seed)
+    number = randint(x, y)
+    if instance(x, float):
+        return GenNumberSeed.rand_float(x, y, seed)
+    return number
+
+def rand_float(x, y, seed):
+    seed(seed)
+    number = uniform(x, y)
+    return number

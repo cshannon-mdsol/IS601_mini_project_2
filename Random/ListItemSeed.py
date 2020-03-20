@@ -1,7 +1,7 @@
 from random import seed
-from random import random
+from Random.ListItem import ListItem
 
 
-def random_from_list_seed(list_array, seed_value):
-    seed(seed_value)
-    pass
+def rand_list_seed(list, seed):
+    seed(seed)
+    return ListItem.list_item(list)
