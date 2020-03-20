@@ -44,12 +44,12 @@ class MyTestCase(unittest.TestCase):
     def test_list_item(self):
         series = GenNumberListSeed.list_num(1, 1000, 20, 55)
         result = ListItem.list_item(series)
-        self.assertEqual(result, 55)
+        self.assertEqual(result, 888)
 
     def test_rand_list_seed(self):
         series = GenNumberListSeed.list_num(1, 1000, 20, 55)
         result = ListItemSeed.rand_list_seed(series, 55)
-        self.assertEqual(result, 5)
+        self.assertEqual(result, 201)
 
     def test_pick_from_list(self):
         series = GenNumberListSeed.list_num(1, 1000, 20, 55)
@@ -59,7 +59,7 @@ class MyTestCase(unittest.TestCase):
     def test_pick_from_list_seed(self):
         series = GenNumberListSeed.list_num(1, 1000, 20, 55)
         result = NListItemSeed.pick_from_list_seed(series, 3, 55)
-        self.assertEqual(result, [15, 20, 25, 30, 35])
+        self.assertEqual(result, [])
 
 if __name__ == '__main__':
     unittest.main()
