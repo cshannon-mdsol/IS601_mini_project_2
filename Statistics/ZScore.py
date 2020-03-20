@@ -11,6 +11,7 @@ def z_score(num):
         for x in num:
             z = round(((float(x) - float(z_mean)) / float(sd)), 6)
             z_list.append(z)
+
         return z_list
 
     except ZeroDivisionError:
