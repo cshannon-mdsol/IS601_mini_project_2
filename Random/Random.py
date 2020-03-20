@@ -2,7 +2,7 @@ from random import seed
 from random import randint
 
 
-def rand_num(number, base, top, nut):
+def rand_num(base, top, number, nut):
     seed(nut)
     rand_data = []
     i = 1

@@ -6,9 +6,9 @@ from random import uniform
 class GenNumberListSeed:
 
     @staticmethod
-    def list_num(x, y, nut, realm):
+    def list_num(x, y, realm, nut):
         if isinstance(x, float):
-            return list_float(x, y, nut, realm)
+            return list_float(x, y, realm, nut)
         series = []
         seed(nut)
         for each in range(realm):
@@ -17,7 +17,7 @@ class GenNumberListSeed:
         return series
 
     @staticmethod
-    def list_float(x, y, nut, realm):
+    def list_float(x, y, realm, nut):
         series = []
         seed(nut)
         for each in range(realm):
