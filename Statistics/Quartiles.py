@@ -1,6 +1,7 @@
 from Calculator.Square import square
 from Calculator.Division import division
 from Statistics.Median import median
+from Calculator.Addition import addition
 from pprint import pprint
 import math
 
@@ -22,7 +23,7 @@ def quartiles(data):
         Q1 =List2[int(a)]
         Q3 =List2[int(b)]
 
-        bb = int(Q1), int(Q2), int(Q3)
+        bb = addition(addition(int(Q1), int(Q2)) ,int(Q3))
         return bb
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
