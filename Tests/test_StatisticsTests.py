@@ -26,7 +26,6 @@ class MyTestCase(unittest.TestCase):
 
     test_data = CsvReader('/Tests/csv/Test_Data.csv').data
 
-
     def setUp(self):
         self.Statistics = Statistics()
 
@@ -74,12 +73,6 @@ class MyTestCase(unittest.TestCase):
     def test_mode_statistics(self):
         pprint("________Mode________")
         for row in self.test_mode:
-            self.assertEqual(self.Statistics.mode(self.column1), float(row['mode']))
-            self.assertEqual(self.Statistics.result, float(row['mode']))
-
-    def test_mode_statistics(self):
-        pprint("________Median Deviation________")
-        for row in self.test_mode:
             theList = []
 
             for keys in row.keys():
@@ -114,34 +107,31 @@ class MyTestCase(unittest.TestCase):
             self.assertAlmostEqual(self.Statistics.result, float(row['stddev']))
             pprint(self.Statistics.result)
 
-
     def test_skewness_statistics(self):
         pprint("________Skewness________")
         for row in self.test_unitTest:
-            theList = [float(row['Mean']), float(row['Median']),float(row['stddev'])]
-            self.assertAlmostEqual(float(self.Statistics.skewness(theList)), round(float(row['skewed']),4))
-            self.assertAlmostEqual(self.Statistics.result, round(float(row['skewed']),4))
-
+            theList = [float(row['Mean']), float(row['Median']), float(row['stddev'])]
+            self.assertAlmostEqual(float(self.Statistics.skewness(theList)), round(float(row['skewed']), 4))
+            self.assertAlmostEqual(self.Statistics.result, round(float(row['skewed']), 4))
 
     def test_quartiles_statistics(self):
         pprint("________Quartiles________")
         for row in self.test_quar:
-           self.assertEqual(self.Statistics.quartiles(self.col_quar), int(self.Statistics.result))
-           self.assertEqual(self.Statistics.result,row['QF'])
+            self.assertEqual(self.Statistics.quartiles(self.col_quar), int(self.Statistics.result))
 
     def test_z_score_statistics(self):
         pprint("________ZScore________")
         for row in self.test_z_score:
             self.assertEqual(self.Statistics.zscore(self.col_zscore), str(self.col_zscore1))
-            self.assertEqual(str(self.Statistics.result), self.col_zscore1)
+            self.assertEqual(self.Statistics.result(self.col_zscore), str(self.col_zscore1))
 
     def test_correlation_statistics(self):
         pprint("________Correlation________")
         for row in self.test_sam_corr:
-            #pprint(float(row['correlation']))
-            self.assertEqual(self.Statistics.correlation( self.col_sam_corr1,  self.col_sam_corr2),self.Statistics.result )
+            self.assertEqual(self.Statistics.correlation(self.col_sam_corr1, self.col_sam_corr2),
+                             self.Statistics.result)
             self.assertEqual(self.Statistics.result, float(row['correlation']))
+
 
 if __name__ == '__main__':
     unittest.main()
-
