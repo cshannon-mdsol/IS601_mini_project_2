@@ -2,10 +2,11 @@ from Statistics.Mean import mean
 from Statistics.StandardDeviation import stddev
 from pprint import pprint
 
+
 def z_score(num):
     try:
         z_mean = mean(num)
-        sd =stddev(num)
+        sd = stddev(num)
         z_list = []
 
         for x in num:
