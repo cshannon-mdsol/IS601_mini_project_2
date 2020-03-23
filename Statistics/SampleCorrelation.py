@@ -48,9 +48,9 @@ def sample_correlation(data, data1):
         pprint(f)
         pprint(float(g))
         pprint(str(round(h,9)))
-        nCorrelation = str(round(h,9))
-
-        return str(nCorrelation)
+        nCorrelation = round(h,9)
+        pprint(nCorrelation)
+        return nCorrelation
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
     except ValueError:

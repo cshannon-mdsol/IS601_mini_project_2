@@ -22,9 +22,8 @@ def quartiles(data):
 
         Q1 =List2[int(a)]
         Q3 =List2[int(b)]
-
         bb = addition(addition(int(Q1), int(Q2)) ,int(Q3))
-        return bb
+        return int(Q1), int(Q2), int(Q3)
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
     except ValueError:
