@@ -10,19 +10,26 @@ class MyTestCase(unittest.TestCase):
     test_mode = CsvReader('/Tests/csv/Mode.csv').data
     test_var = CsvReader('/Tests/csv/Variance.csv').data
     test_stddev = CsvReader('/Tests/csv/StdDeviation.csv').data
+
     test_quar = CsvReader('/Tests/csv/Quartiles.csv').data
-    col_quar = [row['Value1'] for row in test_quar]
+    col_quar = [row['QF'] for row in test_quar]
+    col_quar1 = [row['Value1'] for row in test_quar]
+    col_quar2 = [row['QF1'] for row in test_quar]
+
     test_skew = CsvReader('/Tests/csv/Skewness.csv').data
+
     test_sam_corr = CsvReader('/Tests/csv/Test_Data_2.csv').data
     col_sam_corr1 = [row['value1'] for row in test_sam_corr]
     col_sam_corr2 = [row['value2'] for row in test_sam_corr]
+    col_sam_corr3 = [row['correlation'] for row in test_sam_corr]
+
     test_pop_corr = CsvReader('/Tests/csv/PopulationCorrelation.csv').data
     test_mean_dev = CsvReader('/Tests/csv/MeanDeviation.csv').data
     test_unitTest = CsvReader('/Tests/csv/UnitTestForStatistic.csv').data
 
     test_z_score = CsvReader('/Tests/csv/ZScore.csv').data
     col_zscore = [row['zscore'] for row in test_z_score]
-    col_zscore1 = [row['zscore1'] for row in test_z_score]
+    col_zscore1 = [row['zscore2'] for row in test_z_score]
 
     test_data = CsvReader('/Tests/csv/Test_Data.csv').data
 
@@ -126,21 +133,33 @@ class MyTestCase(unittest.TestCase):
     def test_quartiles_statistics(self):
         pprint("________Quartiles________")
         for row in self.test_quar:
-           self.assertEqual(self.Statistics.quartiles(self.col_quar), int(self.Statistics.result))
-           self.assertEqual(self.Statistics.result,row['QF'])
+           pprint(row)
+           z_list = []
+           for x in self.col_quar2:
+                z_list.append(x)
+           nFinal = int(z_list[0]), int(z_list[1]),int(z_list[2])
+           self.Statistics.quartiles(self.col_quar1)
+           self.assertEqual(self.Statistics.result,nFinal)
 
     def test_z_score_statistics(self):
         pprint("________ZScore________")
         for row in self.test_z_score:
-            self.assertEqual(self.Statistics.zscore(self.col_zscore), str(self.col_zscore1))
-            self.assertEqual(str(self.Statistics.result), self.col_zscore1)
+            z_list = []
+            for x in self.col_zscore1:
+                z_list.append(x)
+            nFinal = float(z_list[0])
+            self.assertEqual(self.Statistics.zscore(self.col_zscore), nFinal)
+            self.assertEqual(self.Statistics.result, nFinal)
 
     def test_correlation_statistics(self):
         pprint("________Correlation________")
         for row in self.test_sam_corr:
-            #pprint(float(row['correlation']))
+            z_list = []
+            for x in self.col_sam_corr3:
+                z_list.append(x)
+            nFinal = float(z_list[0])
             self.assertEqual(self.Statistics.correlation( self.col_sam_corr1,  self.col_sam_corr2),self.Statistics.result )
-            self.assertEqual(self.Statistics.result, float(row['correlation']))
+            self.assertEqual(self.Statistics.result, nFinal)
 
 if __name__ == '__main__':
     unittest.main()
