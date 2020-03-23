@@ -20,14 +20,14 @@ def skewness(data):
         i=0
         for i in distanceArray:
             x = i
-        pprint(distanceArray[1])
+        #pprint(distanceArray[1])
         a = subtraction( distanceArray[1],distanceArray[0])
-        pprint(a)
+        #pprint(a)
         b = division(distanceArray[2],a)
-        pprint(b)
+        #pprint(b)
         c = multiplication(b,3)
-        pprint(c)
-        nSkewness=float(round(x,5))
+        #pprint(c)
+        #nSkewness=float(round(x,5))
         return round(c,5)
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
