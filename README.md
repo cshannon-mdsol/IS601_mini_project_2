@@ -59,6 +59,7 @@ functionality of the calculator.
 5. https://www.mathsisfun.com/data/correlation.html
 6. https://www.statisticshowto.datasciencecentral.com/what-are-quartiles/
 7. https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
+8. https://www.mathsisfun.com/data/standard-normal-distribution.html
 
 
 ### Changelog:
