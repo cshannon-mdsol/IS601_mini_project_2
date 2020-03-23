@@ -1,7 +1,12 @@
 from random import seed
-from random import random
+from random import randint
 
 
-def random_from_list_seed(list_array, seed_value):
-    seed(seed_value)
-    pass
+class ListItemSeed:
+
+    @staticmethod
+    def rand_list_seed(series, nut):
+        seed(nut)
+        length = len(series)
+        position = randint(0, length - 1)
+        return series[position]

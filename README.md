@@ -29,13 +29,13 @@ Statistical Functions (Statistics.py):
 - [x] Mean Deviation / Mean Absolute Deviation
 
 Random Generator Functions (Random.py): 
-- [ ] Generate random number without seed
-- [ ] Generate random number with seed
-- [ ] Generate a list of random numbers with a seed between a range of provided numbers
-- [ ] Select random item from a list
-- [ ] Select same value from a list with seed
-- [ ] Select items from a list without seed
-- [ ] Select items from a list with seed
+- [x] Generate random number without seed
+- [x] Generate random number with seed
+- [x] Generate a list of random numbers with a seed between a range of provided numbers
+- [x] Select random item from a list
+- [x] Select same value from a list with seed
+- [x] Select items from a list without seed
+- [x] Select items from a list with seed
 
 Population Sampling Functions (Sampling.py): 
 - [ ] Simple random sampling

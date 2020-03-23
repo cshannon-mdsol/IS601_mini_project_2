@@ -1,10 +1,26 @@
 from random import seed
-from random import random
+from random import randint
+from random import uniform
 
 
-def generate_numbers_list_seed(x, y, seed_value, list_size):
-    seed(seed_value)
-    the_array = []
-    for i in range(list_size):
-        theArray.append(random.randrange(x, y))
-    return the_array
+class GenNumberListSeed:
+
+    @staticmethod
+    def list_num(x, y, realm, nut):
+        if isinstance(x, float):
+            return list_float(x, y, realm, nut)
+        series = []
+        seed(nut)
+        for each in range(realm):
+            number = randint(x, y)
+            series.append(number)
+        return series
+
+    @staticmethod
+    def list_float(x, y, realm, nut):
+        series = []
+        seed(nut)
+        for each in range(realm):
+            number = uniform(x, y)
+            series.append(number)
+        return series

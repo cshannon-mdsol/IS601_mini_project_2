@@ -1,7 +1,20 @@
 from random import seed
-from random import random
+from random import randint
+from random import uniform
 
 
-def generate_number_seed(x, y, seed_value):
-    seed(seed_value)
-    return random.randrange(x, y)
+class GenNumberSeed:
+
+    @staticmethod
+    def rand_num(x, y, nut):
+        seed(nut)
+        number = randint(x, y)
+        if isinstance(x, float):
+            return GenNumberSeed.rand_float(x, y, nut)
+        return number
+
+    @staticmethod
+    def rand_float(x, y, nut):
+        seed(nut)
+        number = uniform(x, y)
+        return number

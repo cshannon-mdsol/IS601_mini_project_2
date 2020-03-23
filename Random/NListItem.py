@@ -1,6 +1,13 @@
-from random import seed
-from random import random
+from random import randint
 
 
-def pick_from_list(list_array, how_many_items):
-    pass
+class NListItem:
+
+    @staticmethod
+    def pick_from_list(series, realm):
+        series2 = []
+        length = len(series)
+        for each in range(realm):
+            position = randint(0, length-1)
+            series.append(series[position])
+        return series2
