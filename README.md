@@ -21,7 +21,7 @@ Statistical Functions (Statistics.py):
 - [x] Mode
 - [x] Variance
 - [x] Standard Deviation
-- [ ] Quartiles
+- [X] Quartiles
 - [x] Skewness
 - [x] Sample Correlation
 - [x] Population Correlation
