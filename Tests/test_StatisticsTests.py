@@ -139,7 +139,7 @@ class MyTestCase(unittest.TestCase):
            nFinal = int(z_list[0]), int(z_list[1]),int(z_list[2])
            self.Statistics.quartiles(self.col_quar1)
            self.assertEqual(self.Statistics.result,nFinal)
-        print(self.Statistics.result, " equals ", nFinal)
+        #print(self.Statistics.result, " equals ", nFinal)
 
     def test_z_score_statistics(self):
         pprint("________ZScore________")
@@ -149,7 +149,7 @@ class MyTestCase(unittest.TestCase):
                 z_list.append(x)
             nFinal = float(z_list[0])
             self.assertEqual(self.Statistics.zscore(self.col_zscore), nFinal)
-        print(self.Statistics.result, " equals ", nFinal)
+        #print(self.Statistics.result, " equals ", nFinal)
 
     def test_correlation_statistics(self):
         pprint("________Correlation________")
@@ -161,7 +161,7 @@ class MyTestCase(unittest.TestCase):
             nFinal = float(z_list[0])
             self.assertEqual(self.Statistics.correlation( self.col_sam_corr1,  self.col_sam_corr2),self.Statistics.result )
             self.assertEqual(self.Statistics.result, nFinal)
-        print(self.Statistics.result, " equals ", nFinal)
+        #print(self.Statistics.result, " equals ", nFinal)
 
 if __name__ == '__main__':
     unittest.main()

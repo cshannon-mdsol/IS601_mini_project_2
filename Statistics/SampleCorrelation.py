@@ -57,5 +57,5 @@ def sample_correlation(data, data1):
         print("Error - Invalid data inputs")
 
 # https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/
-# https://www.mathsisfun.com/data/correlation.html
+#
 # https://www.geeksforgeeks.org/numpy-subtract-in-python/
