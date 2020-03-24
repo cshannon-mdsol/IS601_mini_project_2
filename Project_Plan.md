@@ -80,9 +80,18 @@
                 4.	Multiple total number by .25 in order to get Q1.
                 5.	Multiple total number by .75 in order to get Q3.
         13.	Skewness
+            1. Variables
+                1.List1,List2,List3,List4
+                2.n1,n2,n3,n4
             1. Methods
-                1.	Get each item into an array.
-                2.	
+                1. Get Standard Deviation
+                2. Get Mean
+                3. Get lenght of input values 
+                4. Subtract values n (data) from Mean=List1
+                5. Divide values n2 (List1) by Standard Deviation=List2
+                6. Cubes each value n3 (List2)=List3 
+                7. Get the sum of all values n4 (List3) = x
+                8. Divide values x with length of values = Skewness
         14.	Sample Correlation
             1.	Methods
                 1.	Get mean of both two columns (c1 and c2)

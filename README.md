@@ -60,6 +60,7 @@ functionality of the calculator.
 6. https://www.statisticshowto.datasciencecentral.com/what-are-quartiles/
 7. https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
 8. https://www.mathsisfun.com/data/standard-normal-distribution.html
+9. https://sciencing.com/calculate-skew-6384014.html
 
 
 ### Changelog:
