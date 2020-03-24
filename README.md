@@ -7,6 +7,9 @@ Mini Project 2 - Stefan DeRosa, Kimberly McDaniel, Chris Shannon
 
 This project will have multiple parts:
 
+## Project Plan:
+[Click here](https://github.com/cshannon-mdsol/IS601_mini_project_2/blob/master/Project_Plan.md) to see our groups project plan to see how each statistic function relates to each other.
+
 Basic Calculations (Calculator.py):
 1. Addition
 2. Subtraction
