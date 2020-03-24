@@ -5,6 +5,8 @@ from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
+    global nFinal 
+
     test_mean = CsvReader('/Tests/csv/Mean.csv').data
     test_med = CsvReader('/Tests/csv/Median.csv').data
     test_mode = CsvReader('/Tests/csv/Mode.csv').data
@@ -155,7 +157,6 @@ class MyTestCase(unittest.TestCase):
         pprint("________Correlation________")
         for row in self.test_sam_corr:
             z_list = []
-            nFinal = 0
             for x in self.col_sam_corr3:
                 z_list.append(x)
             nFinal = float(z_list[0])
