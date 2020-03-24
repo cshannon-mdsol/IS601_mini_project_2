@@ -1,26 +1,26 @@
 1. Calculator Object
     1. Properties
 1. Result 
-    2. Methods
+    1. Methods
         1. Addition -> Calls add static method from math operations
-        2.	Subtraction -> Call subtract static method from Math operations
-        3.	Division-> Call divide static method from Math operations
-        4.	Multiplication-> Call multiply static method from Math operations
-        5.	Sqaure -> Call square static method from Math operations
-        6.	Sqaure Root -> Call square_root static method from Math operations
-        7.	Mean()
-        8.	Median()
-        9.	Mode()
-        10.	test_variance_statistics(self) - Call variance static method from statistic operations
-        11.	test_standard_deviation_statistics(self) - Call stddev static method from statistic operations
-        12.	test_quartiles_statistics(self) - Call skewness static method from statistic operations
+        2. Subtraction -> Call subtract static method from Math operations
+        3. Division-> Call divide static method from Math operations
+        4. Multiplication-> Call multiply static method from Math operations
+        5. Sqaure -> Call square static method from Math operations
+        6. Sqaure Root -> Call square_root static method from Math operations
+        7.Mean()
+        8. Median()
+        9. Mode()
+        10. test_variance_statistics(self) - Call variance static method from statistic operations
+        11. test_standard_deviation_statistics(self) - Call stddev static method from statistic operations
+        12. test_quartiles_statistics(self) - Call skewness static method from statistic operations
         13.	test_skewness_statistics(self) - Call quartiles static method from statistic operations
         14.	Sample Correlation()
         15.	PopCor()
         16.	test_z_score_statistics(self) - Call zscore static method from statistic operations
         17.	MeanDev()	 
-    2.	Math Operations Static Class
-        1.	Methods
+    2. Math Operations Static Class
+        1. Methods
             1.	Add -> Calls Addition class method of sum
             2.	Subtract->Calls Subtraction class method of subtraction
             3.	Divide -> Calls Division class method of division
