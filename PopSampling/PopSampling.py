@@ -14,12 +14,15 @@ from PopSampling.ConIntervalPop import confidence_interval_pop
 
 class PopSampling(Calculator):
     data = []
+    data1 = []
+    data2 = []
+    data3 = []
 
     def __init__(self):
         super().__init__()
 
-    def confidence_interval_pop(self, data):
-        self.result = confidence_interval_pop(data1, data2)
+    def confidence_interval_pop(self, data1, data2, data3):
+        self.result = confidence_interval_pop(data1,data2,data3)
         return self.result
 
     pass

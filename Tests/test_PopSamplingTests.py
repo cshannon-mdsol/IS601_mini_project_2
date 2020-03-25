@@ -16,6 +16,8 @@ class MyTestCase(unittest.TestCase):
 
 
     test_ConfidenceInterval = CsvReader('/Tests/csv/ConfidenceInterval.csv').data
+    col1_Confidence = [row['CI'] for row in test_ConfidenceInterval]
+    col2_Confidence = [row['Z'] for row in test_ConfidenceInterval]
 
 
     def setUp(self):
@@ -27,10 +29,13 @@ class MyTestCase(unittest.TestCase):
     def test_confidence_interval(self):
         pprint("________Confidence Interval________")
         for row in self.test_ConfidenceInterval:
-            pprint(row)
-            #self.assertEqual(self.Statistics.mean(theList), float(row['CalculatedMean']))
+            theList1 = [self.col1_Confidence]
+            theList2 = [self.col2_Confidence]
+            theList3 = [ (row['xMean']), (row['nObservations']), (row['sSD'])]
+            #pprint(theList3)
+            self.PopSampling.confidence_interval_pop(theList1,theList2,theList3)
             #self.assertEqual(self.Statistics.result, float(row['CalculatedMean']))
-            print("Test")
+            #print("Test")
 
 
 if __name__ == '__main__':
