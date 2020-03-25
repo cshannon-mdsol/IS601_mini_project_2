@@ -7,7 +7,7 @@ from Random.ListItem import ListItem
 from Random.ListItemSeed import ListItemSeed
 from Random.NListItem import NListItem
 from Random.NListItemSeed import NListItemSeed
-
+from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
@@ -16,7 +16,8 @@ class MyTestCase(unittest.TestCase):
     def test_gen_num(self):
         result = GenNumber.rand_num(1, 1000)
         self.assertEqual(isinstance(result, int), True)
-
+        pprint("RANDOM")
+        pprint(result)
     def test_gen_num_float(self):
         result = GenNumber.rand_float(1, 1000)
         self.assertEqual(isinstance(result, float), True)
@@ -61,5 +62,7 @@ class MyTestCase(unittest.TestCase):
         result = NListItemSeed.pick_from_list_seed(series, 3, 55)
         self.assertEqual(result, [])
 
+
 if __name__ == '__main__':
     unittest.main()
+    

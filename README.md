@@ -7,6 +7,9 @@ Mini Project 2 - Stefan DeRosa, Kimberly McDaniel, Chris Shannon
 
 This project will have multiple parts:
 
+## Project Plan:
+[Click here](https://github.com/cshannon-mdsol/IS601_mini_project_2/blob/master/Project_Plan.md) to see our groups project plan to see how each statistic function relates to each other.
+
 Basic Calculations (Calculator.py):
 1. Addition
 2. Subtraction
@@ -60,6 +63,7 @@ functionality of the calculator.
 6. https://www.statisticshowto.datasciencecentral.com/what-are-quartiles/
 7. https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
 8. https://www.mathsisfun.com/data/standard-normal-distribution.html
+9. https://sciencing.com/calculate-skew-6384014.html
 
 
 ### Changelog:
