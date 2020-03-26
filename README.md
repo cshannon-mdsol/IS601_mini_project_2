@@ -41,7 +41,7 @@ Random Generator Functions (Random.py):
 - [x] Select items from a list with seed
 
 Population Sampling Functions (Sampling.py): 
-- [ ] Simple random sampling
+- [x] Simple random sampling
 - [ ] Systematic sampling
 - [x] Confidence Interval for a Sample
 - [x] Margin of Error
