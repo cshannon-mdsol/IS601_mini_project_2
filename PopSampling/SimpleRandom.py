@@ -1,10 +1,8 @@
-from random import seed
-from Random.NListItemSeed import NListItemSeed
+# source https://pynative.com/python-random-choice/
+
+import random
 
 
-class SimpleRandom(NListItemSeed):
+def simple_random(series, itemsToReturn):
+    return random.choices(series, k=itemsToReturn)
 
-    @staticmethod
-    def simple_random(series, realm, nut):
-        seed(nut)
-        return NListItemSeed.pick_from_list_seed(series, realm, nut)
