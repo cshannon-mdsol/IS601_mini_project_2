@@ -7,6 +7,9 @@ Mini Project 2 - Stefan DeRosa, Kimberly McDaniel, Chris Shannon
 
 This project will have multiple parts:
 
+## Project Plan:
+[Click here](https://github.com/cshannon-mdsol/IS601_mini_project_2/blob/master/Project_Plan.md) to see our groups project plan to see how each statistic function relates to each other.
+
 Basic Calculations (Calculator.py):
 1. Addition
 2. Subtraction
@@ -21,7 +24,7 @@ Statistical Functions (Statistics.py):
 - [x] Mode
 - [x] Variance
 - [x] Standard Deviation
-- [ ] Quartiles
+- [X] Quartiles
 - [x] Skewness
 - [x] Sample Correlation
 - [x] Population Correlation
@@ -29,21 +32,21 @@ Statistical Functions (Statistics.py):
 - [x] Mean Deviation / Mean Absolute Deviation
 
 Random Generator Functions (Random.py): 
-- [ ] Generate random number without seed
-- [ ] Generate random number with seed
-- [ ] Generate a list of random numbers with a seed between a range of provided numbers
-- [ ] Select random item from a list
-- [ ] Select same value from a list with seed
-- [ ] Select items from a list without seed
-- [ ] Select items from a list with seed
+- [x] Generate random number without seed
+- [x] Generate random number with seed
+- [x] Generate a list of random numbers with a seed between a range of provided numbers
+- [x] Select random item from a list
+- [x] Select same value from a list with seed
+- [x] Select items from a list without seed
+- [x] Select items from a list with seed
 
 Population Sampling Functions (Sampling.py): 
 - [ ] Simple random sampling
 - [ ] Systematic sampling
-- [ ] Confidence Interval for a Sample
-- [ ] Margin of Error
-- [ ] How to Find a Confidence Interval
-- [ ] Cochran's Sample Size Formula
+- [x] Confidence Interval for a Sample
+- [x] Margin of Error
+- [x] How to Find a Confidence Interval
+- [x] Cochran's Sample Size Formula
 - [ ] How to find a sample size given a confidence interval and width (unknown population standard deviation)
 - [ ] How to find a sample size given a confidence interval and width (known population standard deviation)
 
@@ -59,6 +62,9 @@ functionality of the calculator.
 5. https://www.mathsisfun.com/data/correlation.html
 6. https://www.statisticshowto.datasciencecentral.com/what-are-quartiles/
 7. https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
+8. https://www.mathsisfun.com/data/standard-normal-distribution.html
+9. https://sciencing.com/calculate-skew-6384014.html
+10.https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/find-sample-size/
 
 
 ### Changelog:

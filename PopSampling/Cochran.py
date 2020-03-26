@@ -1,16 +1,19 @@
 from Statistics.ZScore import z_score
 from PopSampling.MarginError import MarginError
-from Statistics.PopulationProportion import PopulationProportion
+#from Statistics.PopulationProportion import PopulationProportion
 from Calculator.Square import square
+from Calculator.Multiplication import multiplication
+from Calculator.Division import division
 
+from pprint import pprint
 
-class Cochran:
+def cochran(p,q,z,e):
+    n1 = multiplication(p,p)
+    n2 = z*z
+    n3 =multiplication(n1,n2)
+    n4=e*e
+    nCochran=division(n4,n3)
+    return int(nCochran)
 
-    @staticmethod
-    def cochran(nut, data, realm):
-        z = ZScore.z_score(data)
-        p = PopulationProportion.pop_proportion(nut, data, realm)
-        e = MarginError.margin_error(nut, data)
-        q = 1 - p
-        cochran = (Square.square(z, 2) * p * q)/Square.square(e, 2)
-        return cochran
+#https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/find-sample-size/
+#((1.96)2 (0.5) (0.5)) / (0.05)2

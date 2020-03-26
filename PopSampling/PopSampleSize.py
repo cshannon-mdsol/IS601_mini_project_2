@@ -1,6 +1,6 @@
-from Statistics.Zscore import Zscore
+from Statistics.ZScore import z_score
 from PopSampling.MarginError import MarginError
-from Statistics.StandardDeviation import StandardDeviation
+from Statistics.StandardDeviation import stddev
 from Calculator.Square import square
 
 
@@ -9,7 +9,7 @@ class PopSampleSize:
     @staticmethod
     def pop_sample_size(nut, data):
         e = MarginError.margin_error(nut, data)
-        stddev = StandardDeviation.stddev(data)
-        val = (1.96 * stddev) / e
+        nstddev = stddev(data)
+        val = (1.96 * nstddev) / e
         sample = Square.square(val, 2)
         return sample

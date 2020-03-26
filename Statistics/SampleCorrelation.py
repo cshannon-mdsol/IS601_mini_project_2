@@ -43,19 +43,19 @@ def sample_correlation(data, data1):
         f = multiplication(int(d), e)
         g = square_root(int(f))
         h = division(int(g),cc)
-        pprint(float(cc))
-        pprint(e)
-        pprint(f)
-        pprint(float(g))
-        pprint(str(round(h,9)))
-        nCorrelation = str(round(h,9))
-
-        return str(nCorrelation)
+        #pprint(float(cc))
+        #pprint(e)
+        #pprint(f)
+        #pprint(float(g))
+        #pprint(str(round(h,9)))
+        nCorrelation = round(h,9)
+        #pprint(nCorrelation)
+        return nCorrelation
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
     except ValueError:
         print("Error - Invalid data inputs")
 
 # https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/
-# https://www.mathsisfun.com/data/correlation.html
+#
 # https://www.geeksforgeeks.org/numpy-subtract-in-python/
