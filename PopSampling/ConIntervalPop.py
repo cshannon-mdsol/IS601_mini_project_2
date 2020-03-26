@@ -1,15 +1,12 @@
-from Statistics.Mean import mean
+import numpy as np
+import scipy.stats as st
 from pprint import pprint
 
+def confidence_interval_pop(data, confidence=0.95):
+    a = 1.0 * np.array(data)
+    n = len(a)
+    m, se = np.mean(a), st.sem(a)
+    h = se * st.t.ppf((1 + confidence) / 2., n-1)
 
-def confidence_interval_pop(data1, data2, data3):
-        List1 = []
-        for n in data3:
-                List1.append(n)
-        List1[1]
-        #pprint(data1)
-        #pprint(data2)
-        pprint(List1[1])
-        return 0
+    return float(h)
 
-#https://www.mathsisfun.com/data/confidence-interval.html
