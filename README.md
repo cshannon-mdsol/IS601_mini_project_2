@@ -43,10 +43,10 @@ Random Generator Functions (Random.py):
 Population Sampling Functions (Sampling.py): 
 - [ ] Simple random sampling
 - [ ] Systematic sampling
-- [ ] Confidence Interval for a Sample
-- [ ] Margin of Error
-- [ ] How to Find a Confidence Interval
-- [ ] Cochran's Sample Size Formula
+- [x] Confidence Interval for a Sample
+- [x] Margin of Error
+- [x] How to Find a Confidence Interval
+- [x] Cochran's Sample Size Formula
 - [ ] How to find a sample size given a confidence interval and width (unknown population standard deviation)
 - [ ] How to find a sample size given a confidence interval and width (known population standard deviation)
 
