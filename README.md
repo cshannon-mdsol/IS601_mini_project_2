@@ -47,8 +47,8 @@ Population Sampling Functions (Sampling.py):
 - [x] Margin of Error
 - [x] How to Find a Confidence Interval
 - [x] Cochran's Sample Size Formula
-- [ ] How to find a sample size given a confidence interval and width (unknown population standard deviation)
-- [ ] How to find a sample size given a confidence interval and width (known population standard deviation)
+- [x] How to find a sample size given a confidence interval and width (unknown population standard deviation)
+- [x] How to find a sample size given a confidence interval and width (known population standard deviation)
 
 This uses both built-in functions and CSV data sheets to test the 
 functionality of the calculator.
@@ -64,7 +64,8 @@ functionality of the calculator.
 7. https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
 8. https://www.mathsisfun.com/data/standard-normal-distribution.html
 9. https://sciencing.com/calculate-skew-6384014.html
-10.https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/find-sample-size/
+10. https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/find-sample-size/
+11. http://www.stat.yale.edu/Courses/1997-98/101/confint.htm
 
 
 ### Changelog:

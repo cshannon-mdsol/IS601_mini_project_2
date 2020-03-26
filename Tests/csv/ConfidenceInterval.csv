@@ -1,2 +1,2 @@
-mean,median,mode,stddev,variance,correlation,proportion_variance,ci_top,ci_bottom
-99.3155,99,101,19.80086,392.0739598,0.0138024,1.00E-08,28.67096,19.02904
+mean,median,mode,stddev,variance,correlation,proportion_variance,ci_known,ci_unknown
+99.3155,99,101,19.80086,392.0739598,0.0138024,1.00E-08,28.67096,17.27596

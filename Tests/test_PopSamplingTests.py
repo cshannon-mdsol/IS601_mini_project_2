@@ -10,8 +10,8 @@ from PopSampling.PopSampleSize import PopSampleSize
 from PopSampling.PopSampling import PopSampling
 from CsvReader.CsvReader import CsvReader
 
-from PopSampling.ConfidenceIntervalTop import confidence_interval_top
-from PopSampling.ConfidenceIntervalBottom import confidence_interval_bottom
+from PopSampling.ConfidenceIntervalKnown import confidence_interval_known
+from PopSampling.ConfidenceIntervalUnknown import confidence_interval_unknown
 
 from pprint import pprint
 
@@ -38,10 +38,10 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.PopSampling, PopSampling)
 
     def test_confidence_interval(self):
-        pprint("________Confidence Interval________")
+        pprint("________Confidence Interval Unknown/Known________")
         for row in self.test_ConfidenceInterval:
-            self.assertEqual(self.PopSampling.confidence_interval_top(self.col2_value1), float(row['ci_top']))
-            self.assertEqual(self.PopSampling.confidence_interval_bottom(self.col2_value1), float(row['ci_bottom']))
+            self.assertEqual(self.PopSampling.confidence_interval_known(self.col2_value1), float(row['ci_known']))
+            self.assertEqual(self.PopSampling.confidence_interval_unknown(self.col2_value1), float(row['ci_unknown']))
 
     def test_confidence_interval_marginoferror(self):
         pprint("________Confidence Interval Margin Of Error________")
