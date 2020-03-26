@@ -64,6 +64,7 @@ functionality of the calculator.
 7. https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
 8. https://www.mathsisfun.com/data/standard-normal-distribution.html
 9. https://sciencing.com/calculate-skew-6384014.html
+10.https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/find-sample-size/
 
 
 ### Changelog:
