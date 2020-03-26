@@ -6,14 +6,17 @@ from Statistics.Mean import mean
 from Statistics.StandardDeviation import stddev
 from pprint import pprint
 
-def confidence_interval_bottom(num):
+def confidence_interval_unknown(num):
     try:
         num_values = len(num)
         z = 1.96
-        sd = stddev(num)
+        unknownSD = 15
         avg = mean(num)
-        return round(avg - (z * sd / square_root(num_values)), 5)
+        return round(avg + (z * unknownSD / square_root(num_values)), 5)
     except ZeroDivisionError:
         print("Error: Can't Divide by 0")
     except ValueError:
         print("Error: Check your data inputs")
+
+        #http://www.stat.yale.edu/Courses/1997-98/101/confint.htm
+        #https://math.stackexchange.com/questions/167302/when-standard-deviation-is-unknown/167307

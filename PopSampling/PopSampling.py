@@ -1,8 +1,8 @@
 from Calculator.Calculator import Calculator
 from PopSampling.ConfidenceInterval import confidence_interval
 from PopSampling.Cochran import cochran
-from PopSampling.ConfidenceIntervalTop import confidence_interval_top
-from PopSampling.ConfidenceIntervalBottom import confidence_interval_bottom
+from PopSampling.ConfidenceIntervalKnown import confidence_interval_known
+from PopSampling.ConfidenceIntervalUnknown import confidence_interval_unknown
 
 class PopSampling(Calculator):
     data = []
@@ -19,12 +19,12 @@ class PopSampling(Calculator):
         self.result = confidence_interval(data1,data2,data3)
         return self.result
 
-    def confidence_interval_top(self, data):
-        self.result = confidence_interval_top(data)
+    def confidence_interval_known(self, data):
+        self.result = confidence_interval_known(data)
         return self.result
 
-    def confidence_interval_bottom(self, data):
-        self.result = confidence_interval_bottom(data)
+    def confidence_interval_unknown(self, data):
+        self.result = confidence_interval_unknown(data)
         return self.result
 
     def cochran(self, data1,data2,data3,data4):

@@ -16,7 +16,7 @@ def confidence_interval(n,x,s):
 
     return round(float(n3),2)
 
-
+#https://www.dummies.com/education/math/statistics/how-to-calculate-the-margin-of-error-for-a-sample-mean/
 
     #a = 1.0 * np.array(data)
     #n = len(a)
