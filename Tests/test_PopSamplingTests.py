@@ -1,12 +1,12 @@
 import unittest
-from PopSampling.SimpleRandom import SimpleRandom
-from PopSampling.SystemicSampling import SystematicSampling
-from PopSampling.ConIntervalSam import confidence_interval_sam
-from PopSampling.MarginError import MarginError
-from PopSampling.ConfidenceInterval import confidence_interval
-from PopSampling.Cochran import cochran
-from PopSampling.UnkSampleSize import UnkSampleSize
-from PopSampling.PopSampleSize import PopSampleSize
+# from PopSampling.SimpleRandom import simple_random
+# from PopSampling.SystemicSampling import SystematicSampling
+# from PopSampling.ConIntervalSam import confidence_interval_sam
+# from PopSampling.MarginError import MarginError
+# from PopSampling.ConfidenceInterval import confidence_interval
+# from PopSampling.Cochran import cochran
+# from PopSampling.UnkSampleSize import UnkSampleSize
+# from PopSampling.PopSampleSize import PopSampleSize
 from PopSampling.PopSampling import PopSampling
 from CsvReader.CsvReader import CsvReader
 
@@ -30,12 +30,25 @@ class MyTestCase(unittest.TestCase):
     #col4_Confidence = [row['nObservations'] for row in test_ConfidenceInterval]
     #col5_Confidence = [row['sSD'] for row in test_ConfidenceInterval]
     test_cochran = CsvReader('/Tests/csv/Cochran.csv').data
+    test_simple_random_file = CsvReader('/Tests/csv/SimpleRandom.csv').data
 
     def setUp(self):
         self.PopSampling = PopSampling()
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.PopSampling, PopSampling)
+
+
+    def test_simple_random(self):
+        pprint("________Simple Random________")
+        #self.assertEquals(self.PopSampling)
+        #val1 = self.PopSampling.simple_random(5, 4, 3)
+        for row in self.test_simple_random_file:
+            #pprint(row)
+            #series = ['A', 'B', 'C', 'D', 'E']
+            series = [row['V1'], row['V2'], row['V3'], row['V4'], row['V5']]
+            val1 = self.PopSampling.simple_random(series, row['PickHowMany'])
+            #pprint("I picked ", val1)
 
     def test_confidence_interval(self):
         pprint("________Confidence Interval________")

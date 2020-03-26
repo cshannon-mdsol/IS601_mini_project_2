@@ -3,6 +3,8 @@ from PopSampling.ConfidenceInterval import confidence_interval
 from PopSampling.Cochran import cochran
 from PopSampling.ConfidenceIntervalTop import confidence_interval_top
 from PopSampling.ConfidenceIntervalBottom import confidence_interval_bottom
+from PopSampling.SimpleRandom import simple_random
+
 
 class PopSampling(Calculator):
     data = []
@@ -11,12 +13,15 @@ class PopSampling(Calculator):
     data3 = []
     data4 = []
 
-
     def __init__(self):
         super().__init__()
 
-    def confidence_interval(self, data1,data2,data3):
-        self.result = confidence_interval(data1,data2,data3)
+    def simple_random(self, x, y):
+        self.result = simple_random(x, y)
+        return self.result
+
+    def confidence_interval(self, data1, data2, data3):
+        self.result = confidence_interval(data1, data2, data3)
         return self.result
 
     def confidence_interval_top(self, data):
@@ -27,8 +32,8 @@ class PopSampling(Calculator):
         self.result = confidence_interval_bottom(data)
         return self.result
 
-    def cochran(self, data1,data2,data3,data4):
-        self.result = cochran(data1,data2,data3,data4)
+    def cochran(self, data1, data2, data3, data4):
+        self.result = cochran(data1, data2, data3, data4)
         return self.result
 
     pass
