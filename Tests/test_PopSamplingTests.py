@@ -41,14 +41,13 @@ class MyTestCase(unittest.TestCase):
 
     def test_simple_random(self):
         pprint("________Simple Random________")
-        #self.assertEquals(self.PopSampling)
-        #val1 = self.PopSampling.simple_random(5, 4, 3)
         for row in self.test_simple_random_file:
-            #pprint(row)
-            #series = ['A', 'B', 'C', 'D', 'E']
             series = [row['V1'], row['V2'], row['V3'], row['V4'], row['V5']]
-            val1 = self.PopSampling.simple_random(series, row['PickHowMany'])
-            #pprint("I picked ", val1)
+            val1 = self.PopSampling.simple_random(series, int(row['PickHowMany']))
+            pprint(val1)
+
+            #check that each returned value exists in the series
+            self.assertEqual(len(val1), int(row['PickHowMany']))
 
     def test_confidence_interval(self):
         pprint("________Confidence Interval________")
