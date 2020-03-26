@@ -46,6 +46,15 @@ class MyTestCase(unittest.TestCase):
             # check that the returned items equal the number requested
             self.assertEqual(len(val1), int(row['PickHowMany']))
 
+    def test_systematic_sampling(self):
+        pprint("________Systematic Sampling________")
+        for row in self.test_simple_random_file:
+            series = [row['V1'], row['V2'], row['V3'], row['V4'], row['V5']]
+            val1 = self.PopSampling.systematic_sampling(series, int(row['PickHowMany']), int(row['Interval']))
+
+            # check that the returned items equal the number requested
+            self.assertEqual(len(val1), int(row['PickHowMany']))
+
     def test_confidence_interval(self):
         pprint("________Confidence Interval________")
         for row in self.test_ConfidenceInterval:

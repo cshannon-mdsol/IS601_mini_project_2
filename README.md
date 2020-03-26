@@ -42,7 +42,7 @@ Random Generator Functions (Random.py):
 
 Population Sampling Functions (Sampling.py): 
 - [x] Simple random sampling
-- [ ] Systematic sampling
+- [x] Systematic sampling
 - [x] Confidence Interval for a Sample
 - [x] Margin of Error
 - [x] How to Find a Confidence Interval

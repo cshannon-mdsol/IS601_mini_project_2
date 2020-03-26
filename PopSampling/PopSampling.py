@@ -4,6 +4,7 @@ from PopSampling.Cochran import cochran
 from PopSampling.ConfidenceIntervalTop import confidence_interval_top
 from PopSampling.ConfidenceIntervalBottom import confidence_interval_bottom
 from PopSampling.SimpleRandom import simple_random
+from PopSampling.SystematicSampling import systematic_sampling
 
 
 class PopSampling(Calculator):
@@ -18,6 +19,10 @@ class PopSampling(Calculator):
 
     def simple_random(self, x, y):
         self.result = simple_random(x, y)
+        return self.result
+
+    def systematic_sampling(self, x, y, z):
+        self.result = systematic_sampling(x, y, z)
         return self.result
 
     def confidence_interval(self, data1, data2, data3):
