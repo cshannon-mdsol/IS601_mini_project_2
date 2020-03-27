@@ -1,0 +1,200 @@
+5f81b45,Chris Shannon,18 minutes ago,Merge pull request #33 from cshannon-mdsol/Chris
+e232c54,Chris Shannon,20 minutes ago,Fix: Code clean-up and review to determine outstanding tasks
+aeeb5f0,Chris Shannon,2 hours ago,Merge branch 'master' into Chris
+c594e23,Chris Shannon,2 hours ago,Merge branch 'master' into Chris
+b8dd0d6,sderosa,3 hours ago,Feature: All files can open within Travis CI - Working Condition
+13214ba,sderosa,3 hours ago,Fix: Creating files to open files within Travis CI
+7f665a8,sderosa,3 hours ago,Fix: Creating files to open files within Travis CI
+d88c5d0,sderosa,4 hours ago,Fix: Have travic ci read csv files
+87fb69b,sderosa,5 hours ago,Fix: Have travic ci read csv files
+f632c74,sderosa,5 hours ago,Fix: Have travic ci read csv files
+8a133c3,sderosa,5 hours ago,Fix: Have travic ci read csv files
+25958b3,sderosa,5 hours ago,Fix: Have travic ci read csv files
+2ef2ecb,sderosa,6 hours ago,Merge remote-tracking branch 'origin/master'
+07f2006,sderosa,6 hours ago,Fix: Have travic ci read csv files
+9a3cb17,Stefan,6 hours ago,Update .travis.yml
+e6881aa,Chris Shannon,7 hours ago,Merge branch 'master' into Chris
+53b5c01,sderosa,19 hours ago,Feature: Added additional methods to correspond with static methods and classes
+67bd8a7,sderosa,19 hours ago,Feature: Added additional test data to correspond with methods
+0e5f568,sderosa,19 hours ago,Feature: Added working class PopSampling.py
+71402bd,sderosa,19 hours ago,Feature: Added working Confidence Intervals
+f8c2d2c,sderosa,19 hours ago,Feature: Added working cochran
+2d22f4a,sderosa,19 hours ago,Feature: Added working margin of error
+c1818ba,sderosa,25 hours ago,Merge remote-tracking branch 'origin/master'
+bd774ac,sderosa,25 hours ago,Feature: Added additional Data for Confidence Interval
+9a37746,sderosa,25 hours ago,Feature: Added working Confidence Interval,CI known and CI unknown and margin of Error
+48bcb20,Kimberly McDaniel,26 hours ago,Feature: added systematic_sampling methods, unit tests, etc.
+2153a6b,Chris Shannon,27 hours ago,Merge branch 'master' into Chris
+e696eb0,Kimberly McDaniel,27 hours ago,Task: Cleanup of the simple random sampling function.
+81b2994,Kimberly McDaniel,27 hours ago,Task: Cleanup of the simple random sampling function.
+f3d8195,Kimberly McDaniel,27 hours ago,Task: Simple random sampling implemented, cleanup, and unit test.
+d775590,Kimberly McDaniel,27 hours ago,Feature: Added framework for population sampling functions: simple random sampling and systematic sampling
+44ed465,Chris Shannon,28 hours ago,Merge branch 'master' into Chris
+c7d40db,sderosa,2 days ago,Feature: Added additional updates
+d2a5caf,sderosa,2 days ago,Merge remote-tracking branch 'origin/master'
+4dcfc20,sderosa,2 days ago,Feature: Added additional updates on working methods
+236b1b3,sderosa,2 days ago,Task: Testing Confidence Interval
+580138d,sderosa,2 days ago,Feature: Added working Confindence Interval and Cochran and Marin of Error
+a292704,sderosa,2 days ago,Feature: Added data for ConfidenceInterval and Cochran
+81f6782,sderosa,2 days ago,Feature: Confidence Interval are working.
+9c4402e,sderosa,2 days ago,Feature: Confidence Interval and margin of error is working
+1863d30,sderosa,2 days ago,Feature: Cochran is running and working
+8dc637c,Chris Shannon,2 days ago,Delete ConIntervalPop.py
+cc8ca82,sderosa,2 days ago,Merge branch 'master' of https://github.com/cshannon-mdsol/IS601_mini_project_2 into Stefan
+723c332,sderosa,2 days ago,Fix: Pop Sampling method and classes
+595a738,sderosa,3 days ago,Fix: Pop Sampling method and classes
+760a370,sderosa,3 days ago,Fix: Pop Sampling method and classes
+585f949,Chris Shannon,3 days ago,Create test_PopSamplingTests.py
+516a59c,Chris Shannon,3 days ago,Delete RandomTeXsts.py
+c4a6975,sderosa,3 days ago,Feature: Added additional notes to the MD file
+6fdbd70,sderosa,3 days ago,Feature: Corrected Skewness and working properly with correspoding csv file.
+8d3e32d,sderosa,3 days ago,Fix: Updated project plan with skewness as well as references
+d6cc4ee,sderosa,3 days ago,Fix: Added new data sets to correspond with the Skewness
+a7e402f,sderosa,4 days ago,Fix: Corrected MD file for correct format
+e4a5429,sderosa,4 days ago,Fix: Corrected MD file for correct format
+f5c4528,sderosa,4 days ago,Fix: Corrected MD file for correct format
+965c8e5,sderosa,4 days ago,Fix: Corrected file so Travis CI can read it
+a56a105,sderosa,4 days ago,Fix: Corrected file so Travis CI can read it
+3884fd5,sderosa,4 days ago,Fix: Corrected file so Travis CI can read it
+e1e5ec7,sderosa,4 days ago,Fix: Corrected file so Travis CI can read it
+fa24707,sderosa,4 days ago,Feature: Project Plan has been added to Repo
+cb3e822,Chris Shannon,4 days ago,Re-created test_RandomTests.py
+62e564f,Chris Shannon,4 days ago,Create test_RandomTests.py
+fcd7be0,sderosa,4 days ago,Feature: File has been corrected and methods are working
+c61e6cb,sderosa,4 days ago,Feature: File has been corrected and methods are working
+871d963,sderosa,5 days ago,Merge remote-tracking branch 'origin/master'
+6c24a83,sderosa,5 days ago,Feature: File has been corrected and methods are working
+22369c1,sderosa,5 days ago,Feature: File has been corrected and methods are working
+f6cb244,sderosa,5 days ago,Feature: File has been corrected and methods are working
+84d2c99,Chris Shannon,6 days ago,Merge pull request #30 from cshannon-mdsol/Chris
+25566ec,Chris Shannon,6 days ago,Delete test_PopSamplingTests.py
+1931a1c,Chris Shannon,6 days ago,Bypassing Travis
+e45a028,Chris Shannon,6 days ago,Bypassing Travis
+831547d,Chris Shannon,6 days ago,Bypassing Travis
+a90032e,Chris Shannon,6 days ago,Population Sampling
+f7d3cce,Chris Shannon,7 days ago,Merge pull request #27 from cshannon-mdsol/Chris
+e3758f4,Chris Shannon,7 days ago,Update test_CsvReaderTests.py
+50eb3c2,Chris Shannon,7 days ago,Fixing tests
+bd5164c,Chris Shannon,7 days ago,Update README.md
+cba80be,Chris Shannon,7 days ago,Merge pull request #25 from cshannon-mdsol/master
+15e397e,Chris Shannon,7 days ago,Merge pull request #24 from cshannon-mdsol/Chris
+14da924,Chris Shannon,7 days ago,Trying to get random to work
+aa9eba5,Chris Shannon,7 days ago,Trying to get random to work
+17d6370,Chris Shannon,7 days ago,Trying to get random to work
+e5d3f5f,Chris Shannon,7 days ago,Trying to get random to work
+8e82859,Chris Shannon,7 days ago,Trying to get random to work
+4ae2eb9,Chris Shannon,7 days ago,Trying to get random to work
+72564bc,Chris Shannon,7 days ago,Trying to get random to work
+db5faec,Chris Shannon,7 days ago,Trying to get random to work
+29d7d16,Chris Shannon,7 days ago,Trying to get random to work
+958ee72,Chris Shannon,7 days ago,Merge pull request #15 from cshannon-mdsol/Chris
+f1a8212,Chris Shannon,7 days ago,Testing docker
+3d34b85,sderosa,7 days ago,Feature: Added data to files
+0c1a53b,sderosa,7 days ago,Fix: Working to get the correct datatype so both sides are equal assertEqual()
+e955dcc,sderosa,7 days ago,Fix: File needs to be correct data type in order to get the correct return
+99d328f,Chris Shannon,7 days ago,Testing docker
+44ef268,sderosa,7 days ago,Feature: Use this data to reference Sampling Correlation and its calculations
+b676daa,sderosa,8 days ago,Task: Added additional methods
+39e35ab,sderosa,8 days ago,Feature: Added and corrected data on CSV files
+a98be51,sderosa,8 days ago,Task: Quartiles, Sample Correlation, Skewness, and ZScore needs to be corrected with data types
+040f885,sderosa,8 days ago,Feature: Standard Deviation and Variance had been debugged and are in working condition
+8446063,Chris Shannon,8 days ago,Testing docker
+ce61005,Chris Shannon,8 days ago,Update .gitignore
+270c340,Chris Shannon,8 days ago,Merge pull request #14 from cshannon-mdsol/chris'
+a5c9590,Chris Shannon,8 days ago,Making recommended PyCharm changes
+76749f3,sderosa,8 days ago,Fix: Corrected data to match data in the application
+20d112b,sderosa,8 days ago,Feature: Sample Correlation has been fix and logic is working properly
+2508411,Kimberly McDaniel,8 days ago,Task: Updated ReadMe.md file with tasks in progress.
+7c680fe,sderosa,9 days ago,Feature: Added a changelog file to repo
+1cf7165,sderosa,9 days ago,Fix: Standard Deviation on how it fetch it data through a list[]
+20ca049,sderosa,9 days ago,Fix: StandardDeviation and Variance to reuse coding rather repeating code
+1220220,sderosa,9 days ago,Fix: Added Checklist and Changelog
+4a8c0ab,sderosa,9 days ago,Fix: Added Checklist and Changelog
+5894d2a,sderosa,9 days ago,Feature: Added methods Skewness and Correlation
+84c3f0a,sderosa,9 days ago,Merge remote-tracking branch 'origin/master'
+7c47879,sderosa,9 days ago,Fix: Tested and debugged to get Class/function working
+5ab3973,sderosa,9 days ago,Feature: Added Data Zscore and Correlation CSV files
+f7a9bed,sderosa,9 days ago,Feature: Added Zscore and method
+87d6865,sderosa,9 days ago,Feature: Added SampleCorrelation and method
+2ec704b,sderosa,9 days ago,Feature: Added Skewness and method
+da63f41,Kimberly McDaniel,9 days ago,Feature: added generate_numbre(x,y,seedValue) and generate_random_numbers(x,y,seedValue,listSize) methods
+aa68680,Kimberly McDaniel,9 days ago,Task: Stubbed the random.py file with the future methods we'll use and the return values
+19c33da,Kimberly McDaniel,9 days ago,Task: Stubbed the random.py file with the future methods we'll use
+d6521a8,kmm438,9 days ago,Merge pull request #13 from cshannon-mdsol/statistics-mean-absolute-deviation
+f57ba82,Kimberly McDaniel,9 days ago,Fix: Fixed removed hard-coded values for tests.
+d3591f0,Kimberly McDaniel,9 days ago,Fix: Fixed test for mean deviation to assertAlmostEqual instead of assertEqual because it was failing some tests.
+d86854d,Chris Shannon,9 days ago,Merge pull request #12 from cshannon-mdsol/chris'
+02e1228,Chris Shannon,9 days ago,Merge branch 'master' of https://github.com/cshannon-mdsol/IS601_mini_project_2 into chris'
+20d93b6,Chris Shannon,9 days ago,Random
+82da904,Chris Shannon,9 days ago,Merge pull request #11 from cshannon-mdsol/chris'
+633837b,Chris Shannon,9 days ago,Quartiles and Sample Correlation
+bb41f0e,sderosa,10 days ago,Fix: Testing and debugging zscore method
+8e00b84,sderosa,10 days ago,Merge branch 'master' into Stefan
+dd1e3ad,sderosa,10 days ago,Feature: Added new file and method for MeanDeviation.py
+9b25b61,sderosa,10 days ago,Feature: Added new file and method for Variance
+5a64e0a,sderosa,10 days ago,Feature: Added methods (stddev, zscore, quartiles)
+02bef80,sderosa,10 days ago,Feature: Added new file with method Quartiles
+4f1676f,sderosa,10 days ago,Feature: Added new file with method zscore
+e0f2ae9,sderosa,10 days ago,Feature: Added new file with method StandardDeviation
+9d730d1,sderosa,10 days ago,Merge branch 'master' of https://github.com/cshannon-mdsol/IS601_mini_project_2 into Stefan
+a51ec73,sderosa,10 days ago,Fix: Debugged files in order to remove errors and run successfully (SUCCESS)
+694e951,sderosa,10 days ago,Merge branch 'master' of https://github.com/cshannon-mdsol/IS601_mini_project_2
+33fce19,sderosa,10 days ago,Fix: Debugged files in order to remove errors and run successfully (SUCCESS)
+e3c91fc,Chris Shannon,10 days ago,Merge pull request #10 from cshannon-mdsol/statistics-median-and-mode
+9249b7c,Kimberly McDaniel,10 days ago,Feature: Added Statistics Mode logic and unit tests. All passing and work.
+f1e1556,Kimberly McDaniel,10 days ago,Feature: Added Statistics Median logic and unit tests. All passing and work.
+b73932b,Chris Shannon,10 days ago,Merge pull request #9 from cshannon-mdsol/satistics-mean-devitation
+88cb920,Kimberly McDaniel,10 days ago,Task: Cleaned up unit tests for Mean Deviation, fixed logic in the Mean Deviation Statistics calculator.
+42f7346,Kimberly McDaniel,10 days ago,Task: Cleaned up unit tests for Mean Deviation.
+70ee6dc,Kimberly McDaniel,10 days ago,Feature: Added framework for Statistics - Mean calculation. Also added unit tests for Mean.
+b647e15,Kimberly McDaniel,10 days ago,Feature: Added framework for Statistics - Mean Deviation calculation.
+3a6e941,sderosa,11 days ago,Fix: Debugged files in order to remove errors and run successfully (SUCCESS)
+9cdfce1,sderosa,11 days ago,Fix: Change some variables names according to Professors Videos
+945e288,sderosa,11 days ago,Fix: Debuged and changed filename to link to Classes (case sensitive)
+9d870d4,sderosa,11 days ago,Fix: Debuged and changed filename to link to Classes (case sensitive)
+ef77fab,Chris Shannon,13 days ago,Merge pull request #8 from cshannon-mdsol/chris'
+2d5734c,Chris Shannon,13 days ago,Update ToDoList.md
+8316627,Chris Shannon,13 days ago,Merge pull request #7 from cshannon-mdsol/chris'
+003f6bd,Chris Shannon,13 days ago,Web Links
+07df69f,Chris Shannon,13 days ago,Merge pull request #6 from cshannon-mdsol/chris'
+b9f161d,Chris Shannon,13 days ago,more changes
+b8a5c3f,Chris Shannon,13 days ago,Merge pull request #5 from cshannon-mdsol/chris'
+c3dd246,Chris Shannon,13 days ago,stuff
+edbdba1,Chris Shannon,13 days ago,changes
+19911cb,Chris Shannon,13 days ago,Merge pull request #4 from cshannon-mdsol/chris'
+0653db6,Chris Shannon,13 days ago,Making recommended PyCharm changes
+9dd0bca,Chris Shannon,13 days ago,stuff
+b11d29e,Chris Shannon,13 days ago,Merge pull request #3 from cshannon-mdsol/chris'
+9597c64,Chris Shannon,13 days ago,Making recommended PyCharm changes
+fb283c0,Chris Shannon,13 days ago,Making recommended PyCharm changes
+344d768,Chris Shannon,13 days ago,Making recommended PyCharm changes
+7083315,Chris Shannon,2 weeks ago,Delete setup.py
+2931067,Chris Shannon,2 weeks ago,Merge pull request #2 from cshannon-mdsol/chris'
+50baa43,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+640aa33,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+b4c0adf,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+e205b26,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+8ebd0f5,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+0b0ef1a,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+a58d653,Chris Shannon,2 weeks ago,Merge pull request #1 from cshannon-mdsol/chris'
+c855fdb,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+b94a691,Chris Shannon,2 weeks ago,Making recommended PyCharm changes
+59c9091,Chris Shannon,2 weeks ago,CamelCase
+db69399,Chris Shannon,2 weeks ago,Update .gitignore
+a5c9cd1,Chris Shannon,2 weeks ago,Update .gitignore
+68c60af,Chris Shannon,2 weeks ago,Merge remote-tracking branch 'origin/master'
+bbdb06f,Chris Shannon,2 weeks ago,more stuff
+2b76d6d,Chris Shannon,2 weeks ago,Update .travis.yml
+a60c26e,Chris Shannon,2 weeks ago, travis
+62e0c76,Chris Shannon,2 weeks ago,Update test_Calculator.py
+6afd297,Chris Shannon,2 weeks ago,Update test_CsvReader.py
+dccaeab,Chris Shannon,2 weeks ago,Update requirements.txt
+ab994e6,Chris Shannon,2 weeks ago,task
+effa487,Chris Shannon,2 weeks ago,fix
+c162cf8,Chris Shannon,2 weeks ago,Update .travis.yml
+9e6c9fa,Chris Shannon,2 weeks ago,removed files
+c3c7f03,Chris Shannon,2 weeks ago,Update README.md
+575e9c4,Chris Shannon,2 weeks ago,Update .travis.yml
+26ac332,Chris Shannon,2 weeks ago,Feature: Everything
+017421f,Chris Shannon,4 weeks ago,Create .gitignore
+b1c56b7,Chris Shannon,4 weeks ago,Initial commit
