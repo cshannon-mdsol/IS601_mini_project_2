@@ -5,7 +5,7 @@ from PopSampling.ConfidenceIntervalKnown import confidence_interval_known
 from PopSampling.ConfidenceIntervalUnknown import confidence_interval_unknown
 from PopSampling.SimpleRandom import simple_random
 from PopSampling.SystematicSampling import systematic_sampling
-from PopSampling.ConfidenceIntervals import  confidence_intervals
+from PopSampling.ConfidenceIntervals import confidence_intervals
 
 
 class PopSampling(Calculator):
@@ -45,7 +45,5 @@ class PopSampling(Calculator):
     def confidence_interval_unknown(self, data):
         self.result = confidence_interval_unknown(data)
         return self.result
-
-
 
     pass

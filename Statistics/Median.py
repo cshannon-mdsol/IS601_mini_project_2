@@ -22,4 +22,4 @@ def median(num):
     except ValueError:
         print("Error - Invalid data inputs")
 
-# # https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/
+# https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/statistics-definitions/mean-median-mode/

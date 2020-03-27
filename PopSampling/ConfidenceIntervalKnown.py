@@ -1,10 +1,7 @@
-from Calculator.Division import division
-from Calculator.Subtraction import subtraction
-from Calculator.Addition import addition
-from Calculator.SquareRoot import  square_root
+from Calculator.SquareRoot import square_root
 from Statistics.Mean import mean
 from Statistics.StandardDeviation import stddev
-from pprint import pprint
+
 
 def confidence_interval_known(num):
     try:
@@ -18,5 +15,5 @@ def confidence_interval_known(num):
     except ValueError:
         print("Error: Check your data inputs")
 
-        #http://www.stat.yale.edu/Courses/1997-98/101/confint.htm
-        #https://math.stackexchange.com/questions/167302/when-standard-deviation-is-unknown/167307
+        # http://www.stat.yale.edu/Courses/1997-98/101/confint.htm
+        # https://math.stackexchange.com/questions/167302/when-standard-deviation-is-unknown/167307
