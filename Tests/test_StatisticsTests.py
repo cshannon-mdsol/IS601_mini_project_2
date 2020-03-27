@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
     col1_skewness = [row['Value1'] for row in test_skew]
     col10_skewness = [row['skewness'] for row in test_skew]
 
-    test_sam_corr = CsvReader('/Tests/csv/Test_Data_2.csv').data
+    test_sam_corr = CsvReader('/Tests/csv/Correlation.csv').data
     col_sam_corr1 = [row['value1'] for row in test_sam_corr]
     col_sam_corr2 = [row['value2'] for row in test_sam_corr]
     col_sam_corr3 = [row['correlation'] for row in test_sam_corr]
@@ -35,7 +35,7 @@ class MyTestCase(unittest.TestCase):
     col_zscore = [row['zscore'] for row in test_z_score]
     col_zscore1 = [row['zscore2'] for row in test_z_score]
 
-    test_data = CsvReader('/Tests/csv/Test_Data.csv').data
+
 
 
     def setUp(self):
