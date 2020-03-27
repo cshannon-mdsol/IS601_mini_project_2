@@ -6,7 +6,7 @@ from Statistics.Mean import mean
 from Statistics.StandardDeviation import stddev
 from pprint import pprint
 
-def confidence_interval_top(num):
+def confidence_interval_known(num):
     try:
         num_values = len(num)
         z = 1.96
@@ -17,3 +17,6 @@ def confidence_interval_top(num):
         print("Error: Can't Divide by 0")
     except ValueError:
         print("Error: Check your data inputs")
+
+        #http://www.stat.yale.edu/Courses/1997-98/101/confint.htm
+        #https://math.stackexchange.com/questions/167302/when-standard-deviation-is-unknown/167307
