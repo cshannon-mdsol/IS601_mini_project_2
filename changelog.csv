@@ -22,7 +22,7 @@ f8c2d2c,sderosa,19 hours ago,Feature: Added working cochran
 2d22f4a,sderosa,19 hours ago,Feature: Added working margin of error
 c1818ba,sderosa,25 hours ago,Merge remote-tracking branch 'origin/master'
 bd774ac,sderosa,25 hours ago,Feature: Added additional Data for Confidence Interval
-9a37746,sderosa,25 hours ago,Feature: Added working Confidence Interval,CI known and CI unknown and margin of Error
+9a37746,sderosa,25 hours ago,Feature: Added working Confidence Interval and CI known and CI unknown and margin of Error
 48bcb20,Kimberly McDaniel,26 hours ago,Feature: added systematic_sampling methods, unit tests, etc.
 2153a6b,Chris Shannon,27 hours ago,Merge branch 'master' into Chris
 e696eb0,Kimberly McDaniel,27 hours ago,Task: Cleanup of the simple random sampling function.
