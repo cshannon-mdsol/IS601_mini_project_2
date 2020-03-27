@@ -20,6 +20,7 @@ class MyTestCase(unittest.TestCase):
     test_RandData = CsvReader('Tests/csv/Rand_Data.csv').data
     col2_value1 = [row['value1'] for row in test_RandData]
 
+
     ConfidenceIntervalMargin = CsvReader('Tests/csv/ConfidenceIntervalMargin.csv').data
     test_CIUnknownKnown = CsvReader('Tests/csv/CIUnknownKnown.csv').data
     # col1_Confidence = [row['Value 1'] for row in test_ConfidenceInterval]

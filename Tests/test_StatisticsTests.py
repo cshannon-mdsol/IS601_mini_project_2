@@ -7,6 +7,7 @@ from pprint import pprint
 class MyTestCase(unittest.TestCase):
     global nFinal
 
+
     test_mean = CsvReader("Tests/csv/Mean.csv").data
     test_med = CsvReader("Tests/csv/Median.csv").data
     test_mode = CsvReader("Tests/csv/Mode.csv").data
