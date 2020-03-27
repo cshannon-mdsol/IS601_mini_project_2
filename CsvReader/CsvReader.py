@@ -18,7 +18,8 @@ class CsvReader:
                 pprint("2")
                 for row in csv_data:
                     self.data.append(row)
-                pprint("3")
+                    pprint("3")
+                pprint("4")
         except OSError:
             print('cannot open', filepath)
 
