@@ -17,21 +17,21 @@ from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
-    test_RandData = CsvReader('/Tests/csv/Rand_Data.csv').data
+    test_RandData = CsvReader('Tests/csv/Rand_Data.csv').data
     col2_value1 = [row['value1'] for row in test_RandData]
 
-    ConfidenceIntervalMargin = CsvReader('/Tests/csv/ConfidenceIntervalMargin.csv').data
-    test_CIUnknownKnown = CsvReader('/Tests/csv/CIUnknownKnown.csv').data
+    ConfidenceIntervalMargin = CsvReader('Tests/csv/ConfidenceIntervalMargin.csv').data
+    test_CIUnknownKnown = CsvReader('Tests/csv/CIUnknownKnown.csv').data
     # col1_Confidence = [row['Value 1'] for row in test_ConfidenceInterval]
-    test_mean = CsvReader('/Tests/csv/Mean.csv').data
+    test_mean = CsvReader('Tests/csv/Mean.csv').data
     # col2_Confidence = [row['Z'] for row in test_ConfidenceInterval]
     # col3_Confidence = [row['xMean'] for row in test_ConfidenceInterval]
     # col4_Confidence = [row['nObservations'] for row in test_ConfidenceInterval]
     # col5_Confidence = [row['sSD'] for row in test_ConfidenceInterval]
-    test_cochran = CsvReader('/Tests/csv/Cochran.csv').data
-    test_simple_random_file = CsvReader('/Tests/csv/SimpleRandom.csv').data
+    test_cochran = CsvReader('Tests/csv/Cochran.csv').data
+    test_simple_random_file = CsvReader('Tests/csv/SimpleRandom.csv').data
 
-    test_ConfidenceIntervals = CsvReader('/Tests/csv/ConfidenceIntervals.csv').data
+    test_ConfidenceIntervals = CsvReader('Tests/csv/ConfidenceIntervals.csv').data
     col1_ConfidenceIntervals= [row['value1'] for row in test_ConfidenceIntervals]
 
     def setUp(self):

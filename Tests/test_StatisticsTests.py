@@ -7,29 +7,29 @@ from pprint import pprint
 class MyTestCase(unittest.TestCase):
     global nFinal
 
-    test_mean = CsvReader("/Tests/csv/Mean.csv").data
-    test_med = CsvReader("/Tests/csv/Median.csv").data
-    test_mode = CsvReader("/Tests/csv/Mode.csv").data
-    test_var = CsvReader("/Tests/csv/Variance.csv").data
-    test_stddev = CsvReader("/Tests/csv/StdDeviation.csv").data
+    test_mean = CsvReader("Tests/csv/Mean.csv").data
+    test_med = CsvReader("Tests/csv/Median.csv").data
+    test_mode = CsvReader("Tests/csv/Mode.csv").data
+    test_var = CsvReader("Tests/csv/Variance.csv").data
+    test_stddev = CsvReader("Tests/csv/StdDeviation.csv").data
 
-    test_quar = CsvReader("/Tests/csv/Quartiles.csv").data
+    test_quar = CsvReader("Tests/csv/Quartiles.csv").data
     col_quar = [row["QF"] for row in test_quar]
     col_quar1 = [row["Value1"] for row in test_quar]
     col_quar2 = [row["QF1"] for row in test_quar]
 
-    test_skew = CsvReader("/Tests/csv/SkewnessTest1.csv").data
+    test_skew = CsvReader("Tests/csv/SkewnessTest1.csv").data
     col1_skewness = [row["Value1"] for row in test_skew]
     col10_skewness = [row["skewness"] for row in test_skew]
 
-    test_sam_corr = CsvReader("/Tests/csv/Correlation.csv").data
+    test_sam_corr = CsvReader("Tests/csv/Correlation.csv").data
     col_sam_corr1 = [row["value1"] for row in test_sam_corr]
     col_sam_corr2 = [row["value2"] for row in test_sam_corr]
     col_sam_corr3 = [row["correlation"] for row in test_sam_corr]
 
-    test_pop_corr = CsvReader("/Tests/csv/PopulationCorrelation.csv").data
-    test_mean_dev = CsvReader("/Tests/csv/MeanDeviation.csv").data
-    test_unitTest = CsvReader("/Tests/csv/UnitTestForStatistic.csv").data
+    test_pop_corr = CsvReader("Tests/csv/PopulationCorrelation.csv").data
+    test_mean_dev = CsvReader("Tests/csv/MeanDeviation.csv").data
+    test_unitTest = CsvReader("Tests/csv/UnitTestForStatistic.csv").data
 
     test_z_score = CsvReader("/Tests/csv/ZScore.csv").data
     col_zscore = [row["zscore"] for row in test_z_score]
