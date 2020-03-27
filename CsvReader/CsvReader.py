@@ -13,13 +13,13 @@ class CsvReader:
         self.data = []
         try:
             with open(absolute_path(filepath)) as text_data:
-                pprint("1")
+                #pprint("1")
                 csv_data = csv.DictReader(text_data, delimiter=',')
-                pprint("2")
+                #pprint("2")
                 for row in csv_data:
                     self.data.append(row)
-                    pprint("3")
-                pprint("4")
+                    #pprint(row)
+                #pprint("4")
         except OSError:
             print('cannot open', filepath)
 
