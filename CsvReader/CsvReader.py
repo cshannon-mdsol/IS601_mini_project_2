@@ -15,10 +15,10 @@ class CsvReader:
             with open(absolute_path(filepath)) as text_data:
                 pprint("1")
                 csv_data = csv.DictReader(text_data, delimiter=',')
-                pprint("2")
+                pprint(csv_data )
                 for row in csv_data:
                     self.data.append(row)
-                    pprint("3")
+                    pprint(row)
                 pprint("4")
         except OSError:
             print('cannot open', filepath)
