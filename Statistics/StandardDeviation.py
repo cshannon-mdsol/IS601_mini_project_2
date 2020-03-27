@@ -1,7 +1,6 @@
 from Calculator.SquareRoot import square_root
 from Statistics.Variance import variance
-from Statistics.Mean import mean
-from pprint import pprint
+
 
 def stddev(num):
     try:

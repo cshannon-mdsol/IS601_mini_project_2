@@ -1,39 +1,19 @@
 import unittest
-# from PopSampling.SimpleRandom import simple_random
-# from PopSampling.SystemicSampling import SystematicSampling
-# from PopSampling.ConIntervalSam import confidence_interval_sam
-# from PopSampling.MarginError import MarginError
-# from PopSampling.ConfidenceInterval import confidence_interval
-# from PopSampling.Cochran import cochran
-# from PopSampling.UnkSampleSize import UnkSampleSize
-# from PopSampling.PopSampleSize import PopSampleSize
 from PopSampling.PopSampling import PopSampling
 from CsvReader.CsvReader import CsvReader
-
-from PopSampling.ConfidenceIntervalKnown import confidence_interval_known
-from PopSampling.ConfidenceIntervalUnknown import confidence_interval_unknown
-
 from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
     test_RandData = CsvReader('Tests/csv/Rand_Data.csv').data
     col2_value1 = [row['value1'] for row in test_RandData]
-
-
     ConfidenceIntervalMargin = CsvReader('Tests/csv/ConfidenceIntervalMargin.csv').data
     test_CIUnknownKnown = CsvReader('Tests/csv/CIUnknownKnown.csv').data
-    # col1_Confidence = [row['Value 1'] for row in test_ConfidenceInterval]
     test_mean = CsvReader('Tests/csv/Mean.csv').data
-    # col2_Confidence = [row['Z'] for row in test_ConfidenceInterval]
-    # col3_Confidence = [row['xMean'] for row in test_ConfidenceInterval]
-    # col4_Confidence = [row['nObservations'] for row in test_ConfidenceInterval]
-    # col5_Confidence = [row['sSD'] for row in test_ConfidenceInterval]
     test_cochran = CsvReader('Tests/csv/Cochran.csv').data
     test_simple_random_file = CsvReader('Tests/csv/SimpleRandom.csv').data
-
     test_ConfidenceIntervals = CsvReader('Tests/csv/ConfidenceIntervals.csv').data
-    col1_ConfidenceIntervals= [row['value1'] for row in test_ConfidenceIntervals]
+    col1_ConfidenceIntervals = [row['value1'] for row in test_ConfidenceIntervals]
 
     def setUp(self):
         self.PopSampling = PopSampling()
@@ -67,9 +47,7 @@ class MyTestCase(unittest.TestCase):
                 if keys == "ci":
                     continue
                 theList.append(int(row[keys]))
-            self.assertEqual(self.PopSampling.confidence_intervals(theList),str(row['ci']))
-            #self.assertEqual(self.PopSampling.result,str(row['margin']))
-
+            self.assertEqual(self.PopSampling.confidence_intervals(theList), str(row['ci']))
 
     def test_ci_Unknow_Known(self):
         pprint("________Confidence Interval Unknown/Known________")
