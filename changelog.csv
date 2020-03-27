@@ -23,11 +23,11 @@ f8c2d2c,sderosa,19 hours ago,Feature: Added working cochran
 c1818ba,sderosa,25 hours ago,Merge remote-tracking branch 'origin/master'
 bd774ac,sderosa,25 hours ago,Feature: Added additional Data for Confidence Interval
 9a37746,sderosa,25 hours ago,Feature: Added working Confidence Interval and CI known and CI unknown and margin of Error
-48bcb20,Kimberly McDaniel,26 hours ago,Feature: added systematic_sampling methods, unit tests, etc.
+48bcb20,Kimberly McDaniel,26 hours ago,Feature: added systematic_sampling methods and unit tests and etc.
 2153a6b,Chris Shannon,27 hours ago,Merge branch 'master' into Chris
 e696eb0,Kimberly McDaniel,27 hours ago,Task: Cleanup of the simple random sampling function.
 81b2994,Kimberly McDaniel,27 hours ago,Task: Cleanup of the simple random sampling function.
-f3d8195,Kimberly McDaniel,27 hours ago,Task: Simple random sampling implemented, cleanup, and unit test.
+f3d8195,Kimberly McDaniel,27 hours ago,Task: Simple random sampling implemented and cleanup and unit test.
 d775590,Kimberly McDaniel,27 hours ago,Feature: Added framework for population sampling functions: simple random sampling and systematic sampling
 44ed465,Chris Shannon,28 hours ago,Merge branch 'master' into Chris
 c7d40db,sderosa,2 days ago,Feature: Added additional updates
@@ -96,7 +96,7 @@ e955dcc,sderosa,7 days ago,Fix: File needs to be correct data type in order to g
 44ef268,sderosa,7 days ago,Feature: Use this data to reference Sampling Correlation and its calculations
 b676daa,sderosa,8 days ago,Task: Added additional methods
 39e35ab,sderosa,8 days ago,Feature: Added and corrected data on CSV files
-a98be51,sderosa,8 days ago,Task: Quartiles, Sample Correlation, Skewness, and ZScore needs to be corrected with data types
+a98be51,sderosa,8 days ago,Task: Quartiles and Sample Correlation and Skewness and ZScore needs to be corrected with data types
 040f885,sderosa,8 days ago,Feature: Standard Deviation and Variance had been debugged and are in working condition
 8446063,Chris Shannon,8 days ago,Testing docker
 ce61005,Chris Shannon,8 days ago,Update .gitignore
@@ -117,7 +117,7 @@ a5c9590,Chris Shannon,8 days ago,Making recommended PyCharm changes
 f7a9bed,sderosa,9 days ago,Feature: Added Zscore and method
 87d6865,sderosa,9 days ago,Feature: Added SampleCorrelation and method
 2ec704b,sderosa,9 days ago,Feature: Added Skewness and method
-da63f41,Kimberly McDaniel,9 days ago,Feature: added generate_numbre(x,y,seedValue) and generate_random_numbers(x,y,seedValue,listSize) methods
+da63f41,Kimberly McDaniel,9 days ago,Feature: added generate_numbre(x y seedValue) and generate_random_numbers(x y seedValue listSize) methods
 aa68680,Kimberly McDaniel,9 days ago,Task: Stubbed the random.py file with the future methods we'll use and the return values
 19c33da,Kimberly McDaniel,9 days ago,Task: Stubbed the random.py file with the future methods we'll use
 d6521a8,kmm438,9 days ago,Merge pull request #13 from cshannon-mdsol/statistics-mean-absolute-deviation
@@ -132,7 +132,7 @@ bb41f0e,sderosa,10 days ago,Fix: Testing and debugging zscore method
 8e00b84,sderosa,10 days ago,Merge branch 'master' into Stefan
 dd1e3ad,sderosa,10 days ago,Feature: Added new file and method for MeanDeviation.py
 9b25b61,sderosa,10 days ago,Feature: Added new file and method for Variance
-5a64e0a,sderosa,10 days ago,Feature: Added methods (stddev, zscore, quartiles)
+5a64e0a,sderosa,10 days ago,Feature: Added methods (stddev zscore quartiles)
 02bef80,sderosa,10 days ago,Feature: Added new file with method Quartiles
 4f1676f,sderosa,10 days ago,Feature: Added new file with method zscore
 e0f2ae9,sderosa,10 days ago,Feature: Added new file with method StandardDeviation
@@ -144,7 +144,7 @@ e3c91fc,Chris Shannon,10 days ago,Merge pull request #10 from cshannon-mdsol/sta
 9249b7c,Kimberly McDaniel,10 days ago,Feature: Added Statistics Mode logic and unit tests. All passing and work.
 f1e1556,Kimberly McDaniel,10 days ago,Feature: Added Statistics Median logic and unit tests. All passing and work.
 b73932b,Chris Shannon,10 days ago,Merge pull request #9 from cshannon-mdsol/satistics-mean-devitation
-88cb920,Kimberly McDaniel,10 days ago,Task: Cleaned up unit tests for Mean Deviation, fixed logic in the Mean Deviation Statistics calculator.
+88cb920,Kimberly McDaniel,10 days ago,Task: Cleaned up unit tests for Mean Deviation and fixed logic in the Mean Deviation Statistics calculator.
 42f7346,Kimberly McDaniel,10 days ago,Task: Cleaned up unit tests for Mean Deviation.
 70ee6dc,Kimberly McDaniel,10 days ago,Feature: Added framework for Statistics - Mean calculation. Also added unit tests for Mean.
 b647e15,Kimberly McDaniel,10 days ago,Feature: Added framework for Statistics - Mean Deviation calculation.
