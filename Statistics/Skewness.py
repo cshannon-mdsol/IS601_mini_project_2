@@ -23,7 +23,7 @@ def skewness(data):
         # pprint(List2)
 
         for n3 in List2:
-            List3.append(n3 ** 3);
+            List3.append(n3 ** 3)
         # pprint(List3)
         for n4 in List3:
             x = x + n4
