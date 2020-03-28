@@ -29,6 +29,10 @@ class MyTestCase(unittest.TestCase):
     col_sam_corr3 = [row["correlation"] for row in test_sam_corr]
 
     test_pop_corr = CsvReader("Tests/csv/PopulationCorrelation.csv").data
+    col1_population = [row["value1"] for row in test_pop_corr]
+    col2_population = [row["value2"] for row in test_pop_corr]
+    col3_population = [row["population"] for row in test_pop_corr]
+
     test_mean_dev = CsvReader("Tests/csv/MeanDeviation.csv").data
     test_unitTest = CsvReader("Tests/csv/UnitTestForStatistic.csv").data
 
@@ -56,7 +60,7 @@ class MyTestCase(unittest.TestCase):
 
             self.assertEqual(self.Statistics.mean(theList), float(row["CalculatedMean"]))
             self.assertEqual(self.Statistics.result, float(row["CalculatedMean"]))
-            # print(self.Statistics.result, " equals ", row["CalculatedMean"])
+            print(self.Statistics.result, " equals ", row["CalculatedMean"])
 
     def test_mean_deviation_statistics(self):
         pprint("________Mean Deviation________")
@@ -68,7 +72,7 @@ class MyTestCase(unittest.TestCase):
 
             self.assertAlmostEqual(self.Statistics.meandeviation(theList), float(row["CalculatedMeanDeviation"]), 5)
             self.assertAlmostEqual(self.Statistics.result, float(row["CalculatedMeanDeviation"]), 5)
-            # print(self.Statistics.result, " almost equals within 5 decimal places ", row["CalculatedMeanDeviation"])
+            print(self.Statistics.result, " almost equals within 5 decimal places ", row["CalculatedMeanDeviation"])
 
     def test_median_statistics(self):
         pprint("________Median________")
@@ -81,7 +85,7 @@ class MyTestCase(unittest.TestCase):
 
             self.assertEqual(self.Statistics.median(theList), float(row["CalculatedMedian"]))
             self.assertEqual(self.Statistics.result, float(row["CalculatedMedian"]))
-            # print(self.Statistics.result, " equals ", float(row["CalculatedMedian"]))
+            print(self.Statistics.result, " equals ", float(row["CalculatedMedian"]))
 
     def test_mode_statistics(self):
         pprint("________Mode________")
@@ -102,11 +106,11 @@ class MyTestCase(unittest.TestCase):
             if row["CalculatedMode"] != "No mode found":
                 self.assertEqual(self.Statistics.mode(theList), int(row["CalculatedMode"]))
                 self.assertEqual(self.Statistics.result, float(row["CalculatedMode"]))
-                # print(self.Statistics.result, " equals ", int(row["CalculatedMode"]))
+                print(self.Statistics.result, " equals ", int(row["CalculatedMode"]))
             else:
                 self.assertEqual(self.Statistics.mode(theList), (row["CalculatedMode"]))
                 self.assertEqual(self.Statistics.result, (row["CalculatedMode"]))
-                # print(self.Statistics.result, " equals ", (row["CalculatedMode"]))
+                print(self.Statistics.result, " equals ", (row["CalculatedMode"]))
 
     def test_variance_statistics(self):
         pprint("________Variance________")
@@ -115,7 +119,7 @@ class MyTestCase(unittest.TestCase):
                        int(row["Value5"])]
             self.assertEqual(self.Statistics.variance(theList), float(row["Variance"]))
             self.assertEqual(self.Statistics.result, float(row["Variance"]))
-            # print(self.Statistics.result, " equals ", (float(row["Variance"])))
+            print(self.Statistics.result, " equals ", (float(row["Variance"])))
 
     def test_standard_deviation_statistics(self):
         pprint("________StandardDeviation________")
@@ -124,7 +128,7 @@ class MyTestCase(unittest.TestCase):
                        int(row["Value5"])]
             self.assertAlmostEqual(self.Statistics.stddev(theList), float(row["stddev"]))
             self.assertAlmostEqual(self.Statistics.result, float(row["stddev"]))
-            # print(self.Statistics.result, " equals ", (float(row["stddev"])))
+            print(self.Statistics.result, " equals ", (float(row["stddev"])))
 
 
     def test_skewness_statistics(self):
@@ -159,17 +163,26 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.Statistics.zscore(self.col_zscore), nFinal)
         #print(self.Statistics.result, " equals ", nFinal)
 
-    def test_correlation_statistics(self):
-        pprint("________Correlation________")
+    def test_sample_correlation_statistics(self):
+        pprint("________Sample Correlation________")
         for row in self.test_sam_corr:
             z_list = []
             for x in self.col_sam_corr3:
                 z_list.append(x)
             nFinal = float(z_list[0])
-            self.assertEqual(self.Statistics.samplecorrelation(self.col_sam_corr1, self.col_sam_corr2),
-                             self.Statistics.result)
+            self.assertEqual(self.Statistics.samplecorrelation( self.col_sam_corr1,  self.col_sam_corr2),self.Statistics.result )
             self.assertEqual(self.Statistics.result, nFinal)
-        #print(self.Statistics.result, " equals ", nFinal)
+            #print(self.Statistics.result, " equals ", nFinal)
+
+    def test_Population_correlation_statistics(self):
+        pprint("________Population Correlation________")
+        for x in self.col3_population:
+            if x =='':
+                break
+            y=float(x)
+            self.assertEqual(self.Statistics.populationcorrelation( self.col1_population,  self.col2_population),y )
+            self.assertEqual(self.Statistics.result, y)
+            #pprint(self.Statistics.result, " equals ", y)
 
 if __name__ == "__main__":
     unittest.main()
