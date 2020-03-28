@@ -15,7 +15,7 @@ def median(num):
             median2 = list_num[int(subtraction((num_values // 2), 1))]
             median_result = division(2, addition(median1, median2))
         else:
-            median_result = list_num[ math.ceil( division(2, num_values))-1 ]
+            median_result = list_num[math.ceil(division(2, num_values)) - 1]
         return float(median_result)
     except ZeroDivisionError:
         print("Error - Cannot divide by 0")
