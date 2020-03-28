@@ -27,7 +27,7 @@ Statistical Functions (Statistics.py):
 - [X] Quartiles
 - [x] Skewness
 - [x] Sample Correlation
-- [ ] Population Correlation
+- [x] Population Correlation
 - [x] Z-Score
 - [x] Mean Deviation / Mean Absolute Deviation
 
