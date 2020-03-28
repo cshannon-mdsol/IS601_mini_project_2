@@ -22,3 +22,5 @@ def systematic_sampling(series, itemsToReturn, interval):
             i += 1
 
     return returnedArray
+
+# https://www.statisticshowto.datasciencecentral.com/systematic-sampling/

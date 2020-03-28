@@ -15,4 +15,3 @@ def stddev(num):
         print("Error - Invalid data inputs")
 
 # https://www.mathsisfun.com/data/standard-deviation-formulas.html
-# https://www.mathsisfun.com/data/standard-deviation.html
