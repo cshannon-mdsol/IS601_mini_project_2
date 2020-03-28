@@ -8,6 +8,7 @@ class MyTestCase(unittest.TestCase):
         self.csv_reader = CsvReader('Tests/csv/employee_birthday.csv')
 
     def test_return_data_as_objects(self):
+        print("________CsvReader________")
         people = self.csv_reader.return_data_as_objects('person')
         self.assertIsInstance(people, list)
         test_class = ClassFactory('person', self.csv_reader.data[0])
