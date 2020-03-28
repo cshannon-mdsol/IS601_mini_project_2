@@ -29,6 +29,10 @@ class MyTestCase(unittest.TestCase):
     col_sam_corr3 = [row["correlation"] for row in test_sam_corr]
 
     test_pop_corr = CsvReader("Tests/csv/PopulationCorrelation.csv").data
+    col1_population = [row["value1"] for row in test_pop_corr]
+    col2_population = [row["value2"] for row in test_pop_corr]
+    col3_population = [row["population"] for row in test_pop_corr]
+
     test_mean_dev = CsvReader("Tests/csv/MeanDeviation.csv").data
     test_unitTest = CsvReader("Tests/csv/UnitTestForStatistic.csv").data
 
@@ -159,16 +163,27 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.Statistics.zscore(self.col_zscore), nFinal)
         #print(self.Statistics.result, " equals ", nFinal)
 
-    def test_correlation_statistics(self):
-        pprint("________Correlation________")
+    def test_sample_correlation_statistics(self):
+        pprint("________Sample Correlation________")
         for row in self.test_sam_corr:
             z_list = []
             for x in self.col_sam_corr3:
                 z_list.append(x)
             nFinal = float(z_list[0])
-            self.assertEqual(self.Statistics.correlation( self.col_sam_corr1,  self.col_sam_corr2),self.Statistics.result )
+            self.assertEqual(self.Statistics.samplecorrelation( self.col_sam_corr1,  self.col_sam_corr2),self.Statistics.result )
             self.assertEqual(self.Statistics.result, nFinal)
-        #print(self.Statistics.result, " equals ", nFinal)
+            #print(self.Statistics.result, " equals ", nFinal)
+
+    def test_Population_correlation_statistics(self):
+        pprint("________Population Correlation________")
+        for x in self.col3_population:
+            if x =='':
+                break
+            y=float(x)
+            pprint(y)
+            self.assertEqual(self.Statistics.populationcorrelation( self.col1_population,  self.col2_population),y )
+            self.assertEqual(self.Statistics.result, y)
+            print(self.Statistics.result, " equals ", y)
 
 if __name__ == "__main__":
     unittest.main()
