@@ -1,7 +1,6 @@
 from Calculator.SquareRoot import square_root
 from Statistics.Variance import variance
-from Statistics.Mean import mean
-from pprint import pprint
+
 
 def stddev(num):
     try:
@@ -16,4 +15,3 @@ def stddev(num):
         print("Error - Invalid data inputs")
 
 # https://www.mathsisfun.com/data/standard-deviation-formulas.html
-# https://www.mathsisfun.com/data/standard-deviation.html

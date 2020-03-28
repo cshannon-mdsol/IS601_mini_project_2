@@ -1,6 +1,6 @@
 import csv
 from FileUtilities.absolutePath import absolute_path
-from pprint import pprint
+
 
 def ClassFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
@@ -13,13 +13,9 @@ class CsvReader:
         self.data = []
         try:
             with open(absolute_path(filepath)) as text_data:
-                #pprint("1")
                 csv_data = csv.DictReader(text_data, delimiter=',')
-                #pprint("2")
                 for row in csv_data:
                     self.data.append(row)
-                    #pprint(row)
-                #pprint("4")
         except OSError:
             print('cannot open', filepath)
 
