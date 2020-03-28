@@ -7,6 +7,7 @@ from pprint import pprint
 class MyTestCase(unittest.TestCase):
     global nFinal
 
+
     test_mean = CsvReader("Tests/csv/Mean.csv").data
     test_med = CsvReader("Tests/csv/Median.csv").data
     test_mode = CsvReader("Tests/csv/Mode.csv").data
@@ -34,6 +35,9 @@ class MyTestCase(unittest.TestCase):
     test_z_score = CsvReader("/Tests/csv/ZScore.csv").data
     col_zscore = [row["zscore"] for row in test_z_score]
     col_zscore1 = [row["zscore2"] for row in test_z_score]
+
+
+
 
     def setUp(self):
         self.Statistics = Statistics()
@@ -122,6 +126,7 @@ class MyTestCase(unittest.TestCase):
             self.assertAlmostEqual(self.Statistics.result, float(row["stddev"]))
             # print(self.Statistics.result, " equals ", (float(row["stddev"])))
 
+
     def test_skewness_statistics(self):
         pprint("________Skewness________")
         for row in self.test_skew:
@@ -131,18 +136,18 @@ class MyTestCase(unittest.TestCase):
             nFinal = float(z_list[0])
             self.assertAlmostEqual(float(self.Statistics.skewness(self.col1_skewness)), nFinal)
             self.assertAlmostEqual(self.Statistics.result, nFinal)
-            # print(self.Statistics.result, " equals ", nFinal)
+            #print(self.Statistics.result, " equals ", nFinal)
 
     def test_quartiles_statistics(self):
         pprint("________Quartiles________")
         for row in self.test_quar:
-            z_list = []
-            for x in self.col_quar2:
+           z_list = []
+           for x in self.col_quar2:
                 z_list.append(x)
-            nFinal = int(z_list[0]), int(z_list[1]), int(z_list[2])
-            self.Statistics.quartiles(self.col_quar1)
-            self.assertEqual(self.Statistics.result, nFinal)
-        # print(self.Statistics.result, " equals ", nFinal)
+           nFinal = int(z_list[0]), int(z_list[1]),int(z_list[2])
+           self.Statistics.quartiles(self.col_quar1)
+           self.assertEqual(self.Statistics.result,nFinal)
+        #print(self.Statistics.result, " equals ", nFinal)
 
     def test_z_score_statistics(self):
         pprint("________ZScore________")
@@ -152,7 +157,7 @@ class MyTestCase(unittest.TestCase):
                 z_list.append(x)
             nFinal = float(z_list[0])
             self.assertEqual(self.Statistics.zscore(self.col_zscore), nFinal)
-        # print(self.Statistics.result, " equals ", nFinal)
+        #print(self.Statistics.result, " equals ", nFinal)
 
     def test_correlation_statistics(self):
         pprint("________Correlation________")
@@ -164,8 +169,8 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.Statistics.samplecorrelation(self.col_sam_corr1, self.col_sam_corr2),
                              self.Statistics.result)
             self.assertEqual(self.Statistics.result, nFinal)
-        # print(self.Statistics.result, " equals ", nFinal)
-
+        #print(self.Statistics.result, " equals ", nFinal)
 
 if __name__ == "__main__":
     unittest.main()
+
