@@ -180,10 +180,9 @@ class MyTestCase(unittest.TestCase):
             if x =='':
                 break
             y=float(x)
-            pprint(y)
             self.assertEqual(self.Statistics.populationcorrelation( self.col1_population,  self.col2_population),y )
             self.assertEqual(self.Statistics.result, y)
-            print(self.Statistics.result, " equals ", y)
+            #pprint(self.Statistics.result, " equals ", y)
 
 if __name__ == "__main__":
     unittest.main()
